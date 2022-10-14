@@ -12,9 +12,21 @@ body {
     color: #333;
 }
 /* Home - Francesco */
-header img{  
-    background-size: cover;
-    
+header img { 
+    background-size: cover;    
+}
+
+header .fa {
+    color:#ff5333;
+    font-size: 14px;
+}
+
+#menu + ul {
+    list-style-type: none;
+}
+
+#menu:checked  {
+    display: block;
 }
 
 
