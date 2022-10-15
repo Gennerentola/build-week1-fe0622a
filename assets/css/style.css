@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#blog h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+}
+
+.inner-blog-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+#blog h3::before {
+    content: "";
+    position: absolute;
+    left: 55%;
+    bottom: 50px;
+    width: 90px;
+    height: 1px;
+    background: #CBC4B5;
+    margin-left: -70px;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+    grid-template-columns: 1fr 1fr;
+    
+    }    
+}
