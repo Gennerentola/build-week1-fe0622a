@@ -1,7 +1,17 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+/* General Settings */
+body {
+    font-family: myfont;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+} 
+
+/* BLOG */
 
 #blog h1 {
     text-align: center;
@@ -9,20 +19,23 @@ body {
 
 .container {
     display: grid;
+    text-align: center;
 }
 
 .inner-blog-container {
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: center;
     width: 100%;
 }
-
+#blog h3 {
+    position: relative;
+}
 #blog h3::before {
     content: "";
     position: absolute;
     left: 55%;
-    bottom: 50px;
+    bottom: -16px;
     width: 90px;
     height: 1px;
     background: #CBC4B5;
