@@ -9,27 +9,169 @@ body {
     font-family: myfont;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: #333;    
 }
 /* Home - Francesco */
+/* ////////////////////////////////////////// HEADER E NAV /////////////////////////////////////////////// */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: -70px;
+    position: relative;    
+}
+
 header img { 
-    background-size: cover;    
+    background-size: cover;
+    width: 100%;
 }
 
-header .fa {
+header::before { 
+    content: "";
+    background-image: url(../images/overlay-pattern.png);   
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#main_nav > nav .fa {
     color:#ff5333;
-    font-size: 14px;
+    font-size: 28px;
 }
 
-#menu + ul {
+#main_nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 2;
+    margin-inline: 15px;
+    font-size: 15px;
+}
+
+#main_nav > nav {
+    display:grid;
+    justify-items: space-between;
+    background: linear-gradient(to left, #ffffff99, #ffffff);
+    grid-template-columns: 20%;   
+    align-items: center;
+    position: relative;    
+}
+
+#main_nav > nav img {
+    grid-area: 1/1/1/5;
+    width: 189px;
+    padding: 16px 10px 28px;      
+}
+
+#bars {
+    grid-area: 1/5/1/5;
+    text-align: right;
+    padding-right: 25px;
+}
+
+#switch {
+    display:none;
+    width: 0;
+}
+
+#switch + ul {
+    display: none;
+    overflow: hidden;
+    margin:0;
     list-style-type: none;
+    padding: 15px 15px 10px;
+    grid-area: 2 / 1 / 2 / 6;
+    line-height: 1.4;   
 }
 
-#menu:checked  {
+#main_nav > nav li {
+    padding-block: 10px;    
+}
+
+#switch + ul > li:hover {
+    border-bottom: 2px solid #ff5333;
+}
+
+#switch + ul a {
+    color:#2e2e2e;
+    text-decoration: none;
+    line-height: 20px;    
+}
+
+#switch:checked + ul {
     display: block;
+    width:98%;
+    background: linear-gradient(to left, #ffffff99, #ffffff);
+    border-top: 1px solid grey;   /* rivedere colore*/
+    position: absolute;
+    top:+0px;   
+}
+/* ////////////////////////////////////////// FEATURED E CAROUSEL /////////////////////////////////////////////// */
+#featured {
+    height: 297px;
+    background-color: white;
+    padding: 60px 15px 50px 15px;
 }
 
+#navigator {
+    height: 292px;
+}
 
+#navigator input[type=radio] {
+    display: none;
+}
+
+#featured h3 {
+    margin-block: 0;  /* fix su default*/
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    display: inline-block;    
+}
+
+#featured h3 > span {
+    color:#FF5333;
+}
+
+#navigator .fa-angle-right {    /* questo va fixato */
+    display: none;
+    right:15px;
+    font-size: 40px;
+}
+
+#slider {
+    display:flex;
+    overflow: hidden;
+    padding-block: 30px 50px;    
+}
+
+#slider > img {
+    display: block;
+    min-width:50%;
+    height: 170px;    
+}
+
+#featured nav ul {
+    display:flex;
+    margin:0;       /*////////////////*/    
+    padding: 0;     /* fix su default */
+    justify-content: center;
+    list-style-type: none;
+    font-size: 11px;
+    color: #dddddd;
+}
+
+#featured nav li {
+    padding-inline:2px ;
+}
+
+@media screen and (min-width:768px) {
+    
+
+
+
+
+}
 
 /* About Us - Gennaro */
 
