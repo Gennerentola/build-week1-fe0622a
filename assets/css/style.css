@@ -12,6 +12,11 @@ body {
 } 
 
 /* BLOG */
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #blog h1 {
     text-align: center;
@@ -20,6 +25,7 @@ body {
 .container {
     display: grid;
     text-align: center;
+    width: 90%;
 }
 
 .inner-blog-container {
@@ -27,6 +33,9 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+}
+.description-blog-container {
+
 }
 #blog h3 {
     position: relative;
