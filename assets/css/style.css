@@ -12,24 +12,143 @@ body {
     color: #333;
 }
 /* Home - Francesco */
+/* ////////////////////////////////////////// HEADER E NAV /////////////////////////////////////////////// */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
 header img { 
-    background-size: cover;    
+    background-size: cover;
+    width: 100%;    
 }
 
 header .fa {
     color:#ff5333;
-    font-size: 14px;
+    font-size: 28px;
 }
 
-#menu + ul {
+header nav {
+    display:grid;
+    width: 100%;
+    padding-inline: 15px;
+    justify-items: space-between;
+    background-color: white;
+    grid-template-columns: 20%;   
+    align-items: center;  
+    position: sticky;
+    top: 5%;
+}
+
+nav img {
+    grid-area: 1/1/1/5;
+    width: 189px;
+    padding: 16px 10px 28px;
+    background: linear-gradient(right, #ffffff99, white);        /* Controllare trasparenza */    
+}
+
+#bars {
+    grid-area: 1/5/1/5;
+    text-align: right;
+    padding-right: 25px;
+}
+
+#switch {
+    display:none;
+    width: 0;
+}
+
+#switch + ul {
+    display:none;
+    margin:0;
     list-style-type: none;
+    padding: 15px 15px 10px;
+    grid-area: 2 / 1 / 2 / 6;
+    line-height: 1.4;
+    border-top: 1px solid grey;   /* rivedere colore*/
 }
 
-#menu:checked  {
+header nav li {
+    padding-block: 10px;    
+}
+
+#switch + ul > li:hover {
+    border-bottom: 2px solid #ff5333;
+}
+
+#switch + ul a {
+    color:#2e2e2e;
+    text-decoration: none;    
+}
+
+#switch:checked + ul {
+    display:grid;
+    z-index: 1;
+}
+/* ////////////////////////////////////////// FEATURED E CAROUSEL /////////////////////////////////////////////// */
+#featured {
+    height: 407px;
+    background-color: white;
+    width: 100%;
+}
+
+#navigator {
+    padding-inline: 15px;
+    
+}
+
+#navigator input[type=radio] {
+    display: none;
+}
+
+h3 {
+    display: inline-block;
+    left:15px;
+}
+
+#navigator .fa-angle-right {
+    
+    right:15px;
+    font-size: 40px;
+}
+
+#slider {
+    display:flex;
+    overflow: hidden;
+    margin-top: 60px;
+    
+    
+}
+
+#slider > img {
     display: block;
+    min-width:50%;
+    height: 170px;
+    padding-bottom: 50px;
 }
 
+#featured nav ul {
+    display:flex;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 11px;
+    color: #dddddd;
+}
 
+#featured nav li {
+    padding-inline:2px ;
+}
+
+#arrow1 {
+    z-index: 7;
+}
+
+#arrow2 {
+    z-index: 6;
+}
 
 /* About Us - Gennaro */
 
