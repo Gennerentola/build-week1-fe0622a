@@ -14,9 +14,7 @@ body {
 /* Home - Francesco */
 /* ////////////////////////////////////////// HEADER E NAV /////////////////////////////////////////////// */
 header {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    display: flex;    
     margin-bottom: -75px;
     position: relative;    
 }
@@ -55,7 +53,8 @@ header::before {
     background: linear-gradient(to left, #ffffff99, #ffffff);
     grid-template-columns: 20%;   
     align-items: center;
-    position: relative;    
+    position: relative;
+    border-bottom: 1px solid #ffffff99;    
 }
 
 #main_nav > nav img {
@@ -133,25 +132,22 @@ header::before {
     color:#FF5333;
 }
 
-#navigator .fa-angle-right {    /* questo va fixato */
-    display: none;
-    right:15px;
-    font-size: 40px;
+#carousel {
+    overflow: hidden;    
+    padding-block: 30px 54px;  
 }
 
 #slider {
     display:flex;
-    overflow: hidden;
-    padding-block: 30px 54px;    
 }
 
 #slider > img {
     display: block;
     min-width:50%;
-    height: 170px;    
+    height: 170px;   
 }
 
-#featured nav ul {
+#featured nav > ul {
     display:flex;
     margin:0;       /*////////////////*/    
     padding: 0;     /* fix su default */
@@ -164,6 +160,38 @@ header::before {
 #featured nav li {
     padding-inline:2.6px ;
 }
+
+input[id=nav1]:checked ~ nav label[for=nav1],
+input[id=nav2]:checked ~ nav label[for=nav2],
+input[id=nav3]:checked ~ nav label[for=nav3],
+input[id=nav4]:checked ~ nav label[for=nav4],
+input[id=nav5]:checked ~ nav label[for=nav5],
+input[id=nav6]:checked ~ nav label[for=nav6],
+input[id=nav7]:checked ~ nav label[for=nav7],
+input[id=nav8]:checked ~ nav label[for=nav8],
+input[id=nav9]:checked ~ nav label[for=nav9] {
+    color: #ff5333;
+}
+
+input[id="nav1"]:checked ~ #carousel > #slider { transform: translateX(0); }
+input[id="nav2"]:checked ~ #carousel > #slider { transform: translateX(-50%); }
+input[id="nav3"]:checked ~ #carousel > #slider { transform: translateX(-100%); }
+input[id="nav4"]:checked ~ #carousel > #slider { transform: translateX(-150%); }
+input[id="nav5"]:checked ~ #carousel > #slider { transform: translateX(-200%); }
+input[id="nav6"]:checked ~ #carousel > #slider { transform: translateX(-250%); }
+input[id="nav7"]:checked ~ #carousel > #slider { transform: translateX(-300%); }
+input[id="nav8"]:checked ~ #carousel > #slider { transform: translateX(-102%); }
+input[id="nav9"]:checked ~ #carousel > #slider { transform: translateX(-170%); }
+
+label[for=nav8], label[for=nav9] {
+    display:none;
+}
+
+@media screen and (min-width:480px) {
+
+    label[for=nav2], label[for=nav4], label[for=nav6] {
+        display:none;
+    }
 
 @media screen and (min-width:768px) {
     
@@ -212,6 +240,14 @@ header::before {
         height: 161.2px;
         padding-right: 15px;            
     }
+
+    label[for=nav8], label[for=nav9]  {
+        display:inline-block;
+    }
+
+    label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=nav6], label[for=nav7] {
+        display:none;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -237,8 +273,16 @@ header::before {
     }
 
     #slider > img {
-        height: 147.4px;
+        height: 147.5px;
         padding-right: 30px;            
+    }
+
+    label[for=nav3] {
+        display:inline-block;
+    }
+
+    label[for=nav8], label[for=nav9]  {
+        display:none;
     }
 
 }
@@ -259,8 +303,6 @@ header::before {
         padding: 15px 35px 15px 135px ;     
     }
 }
-
-
 
 /* About Us - Gennaro */
 
