@@ -192,6 +192,7 @@ label[for=nav8], label[for=nav9] {
     label[for=nav2], label[for=nav4], label[for=nav6] {
         display:none;
     }
+}
 
 @media screen and (min-width:768px) {
     
