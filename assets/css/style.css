@@ -467,5 +467,19 @@ section p{
     #buttonForm {
         margin-right: -35px;
     }
+
+    #footer_Info {
+        display: flex;
+    }
+    #address ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #address ul li {
+        margin: 0px;
+    }
+    h3 {
+        display: block;
+    }
 }
 
