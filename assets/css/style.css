@@ -24,7 +24,7 @@ header img {
     width: 100%;
 }
 
-header::before { 
+header::before {                                                            /* Effetto Overlay */
     content: "";
     background: url(../images/overlay-pattern.png) black;
     opacity: 0.3;   
