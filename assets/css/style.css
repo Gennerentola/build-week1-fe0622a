@@ -1,3 +1,5 @@
+
+/* Reset */ 
 body {
     margin: 0;
     padding: 0;
@@ -8,10 +10,309 @@ body {
     font-family: myfont;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
-} 
+    color: #333;    
+}
+/* Home - Francesco */
+/* ////////////////////////////////////////// HEADER E NAV /////////////////////////////////////////////// */
+header {
+    display: flex;    
+    margin-bottom: -75px;
+    position: relative;    
+}
 
-/* BLOG */
+header img { 
+    background-size: cover;
+    width: 100%;
+}
+
+header::before { 
+    content: "";
+    background: url(../images/overlay-pattern.png) black;
+    opacity: 0.3;   
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#main_nav > nav .fa {
+    color:#ff5333;
+    font-size: 28px;
+}
+
+#main_nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 2;
+    margin-inline: 15px;
+    font-size: 15px;
+}
+
+#main_nav > nav {
+    display:grid;
+    justify-items: space-between;
+    background: linear-gradient(to left, #ffffff99, #ffffff);
+    grid-template-columns: 20%;   
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #ffffff99;    
+}
+
+#main_nav > nav img {
+    grid-area: 1/1/1/5;
+    width: 189px;
+    padding: 18px 10px 30px;      
+}
+
+#bars {
+    grid-area: 1/5/1/5;
+    text-align: right;
+    padding-right: 25px;
+}
+
+#switch {
+    display:none;
+    width: 0;
+}
+
+#switch + ul {
+    display: none;
+    overflow: hidden;
+    margin:0;
+    list-style-type: none;
+    padding: 15px 15px 10px;
+    grid-area: 2 / 1 / 2 / 6;
+    line-height: 1.34;   
+}
+
+#main_nav > nav li {
+    padding-block: 10px;    
+}
+
+#switch + ul > li:hover {
+    border-bottom: 2px solid #ff5333;
+}
+
+#switch + ul a {
+    color:#2e2e2e;
+    text-decoration: none;   
+}
+
+#switch:checked + ul {
+    display: block;
+    background: linear-gradient(to left, #ffffff99, #ffffff);
+    border-top: 1px solid #e7e7e7;
+    position: absolute;
+    top:+0px;
+    right:0;
+    left:0;      
+}
+/* ////////////////////////////////////////// FEATURED E CAROUSEL /////////////////////////////////////////////// */
+#featured {
+    background-color: white;
+    padding-block: 50px;
+}
+
+#navigator {
+    margin-inline: 15px;
+}
+
+#navigator input[type=radio] {
+    display: none;
+}
+
+#featured h3 {
+    margin-block: 0;  /* fix su default*/
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    display: inline-block;    
+}
+
+#featured h3 > span {
+    color:#FF5333;
+}
+
+#carousel {
+    overflow: hidden;    
+    padding-block: 30px 54px;  
+}
+
+#slider {
+    display:flex;
+}
+
+#slider > img {
+    display: block;
+    min-width:50%;
+    height: 170px;   
+}
+
+#featured nav > ul {
+    display:flex;
+    margin:0;       /*////////////////*/    
+    padding: 0;     /* fix su default */
+    justify-content: center;
+    list-style-type: none;
+    font-size: 11px;
+    color: #dddddd;
+}
+
+#featured nav li {
+    padding-inline:2.6px ;
+}
+
+input[id=nav1]:checked ~ nav label[for=nav1],
+input[id=nav2]:checked ~ nav label[for=nav2],
+input[id=nav3]:checked ~ nav label[for=nav3],
+input[id=nav4]:checked ~ nav label[for=nav4],
+input[id=nav5]:checked ~ nav label[for=nav5],
+input[id=nav6]:checked ~ nav label[for=nav6],
+input[id=nav7]:checked ~ nav label[for=nav7],
+input[id=nav8]:checked ~ nav label[for=nav8],
+input[id=nav9]:checked ~ nav label[for=nav9] {
+    color: #ff5333;
+}
+
+input[id="nav1"]:checked ~ #carousel > #slider { transform: translateX(0); }
+input[id="nav2"]:checked ~ #carousel > #slider { transform: translateX(-50%); }
+input[id="nav3"]:checked ~ #carousel > #slider { transform: translateX(-100%); }
+input[id="nav4"]:checked ~ #carousel > #slider { transform: translateX(-150%); }
+input[id="nav5"]:checked ~ #carousel > #slider { transform: translateX(-200%); }
+input[id="nav6"]:checked ~ #carousel > #slider { transform: translateX(-250%); }
+input[id="nav7"]:checked ~ #carousel > #slider { transform: translateX(-300%); }
+input[id="nav8"]:checked ~ #carousel > #slider { transform: translateX(-102%); }
+input[id="nav9"]:checked ~ #carousel > #slider { transform: translateX(-170%); }
+
+label[for=nav8], label[for=nav9] {
+    display:none;
+}
+
+@media screen and (min-width:480px) {
+
+    label[for=nav2], label[for=nav4], label[for=nav6] {
+        display:none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    
+    header {
+        margin-bottom: -85px;         
+    }
+
+    #main_nav, #featured {
+        width: 720px;
+        margin-inline: auto;        
+    }
+
+    #main_nav > nav {
+        padding-top: 20px;
+        background: #ffffffe3;
+    }
+
+    #main_nav > nav img {
+        grid-area: 1 / 1 / 1 / 4;
+        padding: 15px 25px 30px;      
+    }
+   
+    #switch + ul {
+        display: flex;
+        justify-content: space-between;
+        line-height:1;
+        grid-area: 1 / 3 / 1 / 6;
+        padding: 5px 30px 15px 15px;     
+    }
+
+    #bars {
+        display: none;
+    }
+
+    #navigator {
+        margin-inline: 40px;
+    }
+
+    #featured {
+        margin-top:5px;
+        padding-block: 50px;
+    }
+    
+    #slider > img {
+        min-width: initial;
+        height: 161.2px;
+        padding-right: 15px;            
+    }
+
+    label[for=nav8], label[for=nav9]  {
+        display:inline-block;
+    }
+
+    label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=nav6], label[for=nav7] {
+        display:none;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    #main_nav, #featured {
+        width: 940px;
+        margin-inline: auto;        
+    }
+
+    #switch + ul {
+        justify-content: space-around;
+        line-height:1;
+        grid-area: 1 / 4 / 1 / 6;
+        padding-inline: 10px 55px;     
+    }
+
+    #main_nav > nav img {
+        padding: 20px 25px 30px 40px;      
+    }
+
+    #featured {
+        margin-top:0;
+    }
+
+    #slider > img {
+        height: 147.5px;
+        padding-right: 30px;            
+    }
+
+    label[for=nav3] {
+        display:inline-block;
+    }
+
+    label[for=nav8], label[for=nav9]  {
+        display:none;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    #main_nav, #featured {
+        width: 1140px;      
+    }
+
+    #slider > img {
+        height: 187px;
+        padding-right: 31px;            
+    }
+
+    #switch + ul {
+        justify-content: space-evenly;
+        padding: 15px 35px 15px 135px ;     
+    }
+}
+
+/* About Us - Gennaro */
+
+
+
+
+/* Blog - Lorenzo */
+
 #blog {
     display: flex;
     flex-direction: column;
@@ -55,3 +356,11 @@ body {
     
     }    
 }
+
+/* Menu - David */
+
+
+
+
+
+/* Contacts - Paolo */
