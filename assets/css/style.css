@@ -307,8 +307,63 @@ label[for=nav8], label[for=nav9] {
 
 /* About Us - Gennaro */
 
+#aboutUs {
+    background-color: #F6F6F6;
+    padding: 70px 0;
+    text-align: center;
+}
 
+#aboutUs h1, #aboutUs p {
+    padding: 0 15px;
+}
 
+#aboutUs h1 {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 40px 0;
+    margin: 0;
+    line-height: 1.1;
+    position: relative;
+}
+
+#aboutUs h1 span {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ff5333;
+}
+
+#aboutUs p {
+    color: #959595;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    padding-top: 40px;
+}
+
+#aboutUs h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 140px;
+    height: 1px;
+    background: #CBC4B5;
+    margin-left: -70px;
+}
+
+@media screen and (min-width: 768px) {
+    #aboutUs {
+        padding: 100px 0;
+    }
+
+    #aboutUs h1 {
+        font-size: 36px;
+    }
+
+    #aboutUs h1 span {
+        font-size: 45px;
+    }
+}
 
 /* Blog - Lorenzo */
 
