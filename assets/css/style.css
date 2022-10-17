@@ -24,7 +24,7 @@ header img {
     width: 100%;
 }
 
-header::before { 
+header::before {                                                            /* Effetto Overlay */
     content: "";
     background: url(../images/overlay-pattern.png) black;
     opacity: 0.3;   
@@ -88,8 +88,9 @@ header::before {
     padding-block: 10px;    
 }
 
-#switch + ul > li:hover {
+#switch + ul > li:hover, #switch + ul a::cue-region {
     border-bottom: 2px solid #ff5333;
+    background-color: #333;
 }
 
 #switch + ul a {
