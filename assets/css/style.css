@@ -362,6 +362,7 @@ label[for=nav8], label[for=nav9] {
 #menu {
     padding-top: 70px;
     padding-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 #menu_container {
@@ -480,6 +481,7 @@ label[for=nav8], label[for=nav9] {
     color: #FF4F02;
     font-size: 15px;
     font-weight: 600;
+    
     /*Animation*/
     visibility: visible;
     animation-duration: 500ms;
@@ -492,18 +494,11 @@ label[for=nav8], label[for=nav9] {
     color: white;
 }
 
-@keyframes entrance {
-    0% { opacity: 0;
-            transform: translateY(20px);}
-    100% {    opacity: 1;
-            transform: translateY(0);
-    }
-}
-
 #pancakes {
     animation-duration: 300ms;
     animation-delay: 300ms;
     animation-name: entrance;
+    position: relative;
 }
 
 #chicken {
@@ -538,7 +533,7 @@ label[for=nav8], label[for=nav9] {
 
 @keyframes scalebutton {
     0% { opacity: 0;
-            transform: scale(.3);}
+            transform: scale(0.3);}
     50% {    opacity: 1;
             transform: scale(1.05);
     }
@@ -554,6 +549,12 @@ label[for=nav8], label[for=nav9] {
     }
 }
 
-
+@keyframes entrance {
+    0% { opacity: 0;
+            transform: translateY(20px);}
+    100% {    opacity: 1;
+            transform: translateY(0);
+    }
+}
 
 /* Contacts - Paolo */
