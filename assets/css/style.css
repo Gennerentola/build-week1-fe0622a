@@ -622,7 +622,7 @@ h3 {
     color: #2E2E2E;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 h1 span {
     font-size: 28px;
@@ -645,15 +645,19 @@ form input {
 #footer_Form {
     padding: 30px;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
 #footer_Form button {
     background-color: #ff530a;
-    padding: 20px 80px 20px 80px;
     border: 0;
     margin-top: 20px;
-    width: 100%;
     box-sizing: border-box;
+    padding: 20px 100px 20px 100px;
+    width: 100%;
 }
+
 a {
     text-decoration: none;
     color: #2E2E2E;
@@ -663,16 +667,20 @@ a {
     color: white;
     cursor: pointer;
 }
-
+#footer_Form button a {
+    font-weight: 600;
+}
 ul {
     list-style-type: none;
+    padding: 0px;
+    margin-left: 15px;
 }
 #photo ul, #socialMedia ul {
     display: flex;
     justify-content: space-between;
     padding: 0;
     width: 70%;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 #socialMedia{
     margin-bottom: 100px;
@@ -693,7 +701,7 @@ ul {
 #footer_Content {
     background: #E9E9E9;
     padding: 20px 0px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 #footer_Content p {
     color: #454545;
@@ -717,3 +725,52 @@ ul {
 .twi {
     margin-left: 1px;
 }
+section p{
+    color: #474747;
+    font-size: 12px;
+}
+/*MEDIA QUERIES*/
+@media screen and (min-width:768px) {
+    #address ul {
+        display: flex;
+    }
+    #address ul li {
+        margin: 10px;
+    }
+    #socialMedia ul {
+        width: 30%;
+    }
+    #photo ul {
+        width: 50%;
+    }
+    #footer_Form {
+        align-items: center;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #footer_Form {
+        align-items: flex-end;
+    }
+    #buttonForm {
+        margin-right: -35px;
+    }
+
+    #footer_Info {
+        display: flex;
+    }
+    #address ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #address ul li {
+        margin: 0px;
+    }
+    h3 {
+        display: block;
+    }
+}
+
