@@ -88,9 +88,8 @@ header::before {                                                            /* E
     padding-block: 10px;    
 }
 
-#switch + ul > li:hover, #switch + ul a::cue-region {
+#switch + ul > li:hover {
     border-bottom: 2px solid #ff5333;
-    background-color: #333;
 }
 
 #switch + ul a {
