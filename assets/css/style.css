@@ -24,7 +24,7 @@ header img {
     width: 100%;
 }
 
-header::before { 
+header::before {                                                            /* Effetto Overlay */
     content: "";
     background: url(../images/overlay-pattern.png) black;
     opacity: 0.3;   
@@ -412,6 +412,7 @@ label[for=nav8], label[for=nav9] {
     }    
 }
 
+
 /* Menu - David */
 
 #menu {
@@ -612,6 +613,7 @@ label[for=nav8], label[for=nav9] {
     }
 }
 
+
 /* Media queries */
 
 @media screen and (min-width: 768px) {
@@ -668,4 +670,271 @@ label[for=nav8], label[for=nav9] {
 
     
 
+
+
 /* Contacts - Paolo */
+div h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+}
+h3 {
+    color: #2E2E2E;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+h1 span {
+    font-size: 28px;
+    font-weight: bold;
+}
+.orangeText {
+    color: #ff530a;
+}
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    
+}
+form input {
+    height: 40px;
+}
+#footer_Form {
+    padding: 30px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+#footer_Form button {
+    background-color: #ff530a;
+    border: 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px 100px 20px 100px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2E2E2E;
+
+}
+#footer_Form button a, #socialMedia ul li a {
+    color: white;
+    cursor: pointer;
+}
+#footer_Form button a {
+    font-weight: 600;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 15px;
+}
+#photo ul, #socialMedia ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 70%;
+    margin-left: 15px;
+}
+#socialMedia{
+    margin-bottom: 100px;
+}
+#socialMedia ul {
+    width: 50%;
+    font-size: larger;
+
+}
+#socialMedia ul li{
+    background-color: gray;
+    padding: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+#footer_Content {
+    background: #E9E9E9;
+    padding: 20px 0px;
+    margin-left: 15px;
+}
+#footer_Content p {
+    color: #454545;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#socialMedia ul :hover{
+    background-color: #ff530a;
+}
+.face {
+    margin-left: 3.5px;
+}
+.dribbb {
+    margin-left: 1px;
+}
+.be {
+    margin-left: -1px;
+}
+.twi {
+    margin-left: 1px;
+}
+section p{
+    color: #474747;
+    font-size: 12px;
+}
+/*MEDIA QUERIES*/
+@media screen and (min-width:768px) {
+    #address ul {
+        display: flex;
+    }
+    #address ul li {
+        margin: 10px;
+    }
+    #socialMedia ul {
+        width: 30%;
+    }
+    #photo ul {
+        width: 50%;
+    }
+    #footer_Form {
+        align-items: center;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #footer_Form {
+        align-items: flex-end;
+    }
+    #buttonForm {
+        margin-right: -35px;
+    }
+
+    #footer_Info {
+        display: flex;
+    }
+    #address ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #address ul li {
+        margin: 0px;
+    }
+    h3 {
+        display: block;
+    }
+}
+
+
+/* news - Alex */
+#news{
+    background-image: url(../images/subscribe-bg.jpg);
+    padding: 100px 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 0 15px;
+}
+#news::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url(../images/overlay-pattern.png) black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#news h1{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    padding: 40px 0;
+    position: relative;
+}
+#news h1:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 140px;
+        height: 1px;
+        background: #C8C1B3;
+        margin-left: -70px;
+}
+#news p{
+    padding: 25px 0px;
+    color: #fff;
+    font-size: 18px;
+}
+#news h1 span{
+    font-size: 25px;
+    color: #ff530a;
+    font-weight: 600;
+}
+#inputNews{
+    width: 100%;
+    background: #fff;
+    opacity: 0.9;
+    border: none;
+    height: 65px;
+    font-size: 15px;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    color: #555;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-sizing: border-box;
+    font-family: myfont;
+}
+.btn{
+    width: 212px;
+    height: 65px;
+    border: none;
+    background: #7EC3BB;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 6px 12px;
+    transition: .3s all;
+    /* position: absolute; */
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #69a8a1;
+}
+#news form{
+    text-align: left;
+}
+@media screen and (min-width: 768px){
+    #inputNews{
+        width: 450px;
+        background: #fff;
+    }
+    #news form{
+        text-align: center;
+    }
+    #news form div{
+        display: inline-block;
+        margin: -2px;
+    }
+
+}
