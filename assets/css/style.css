@@ -313,7 +313,49 @@ label[for=nav8], label[for=nav9] {
 /* Blog - Lorenzo */
 
 
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#blog h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    text-align: center;
+    width: 90%;
+}
+
+.inner-blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#blog h3 {
+    position: relative;
+}
+#blog h3::before {
+    content: "";
+    position: absolute;
+    left: 55%;
+    bottom: -16px;
+    width: 90px;
+    height: 1px;
+    background: #CBC4B5;
+    margin-left: -70px;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+    grid-template-columns: 1fr 1fr;
+    
+    }    
+}
 
 /* Menu - David */
 
