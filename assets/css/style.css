@@ -613,3 +613,107 @@ label[for=nav8], label[for=nav9] {
 }
 
 /* Contacts - Paolo */
+div h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+}
+h3 {
+    color: #2E2E2E;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+h1 span {
+    font-size: 28px;
+    font-weight: bold;
+}
+.orangeText {
+    color: #ff530a;
+}
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    
+}
+form input {
+    height: 40px;
+}
+#footer_Form {
+    padding: 30px;
+    margin-right: 20px;
+}
+#footer_Form button {
+    background-color: #ff530a;
+    padding: 20px 80px 20px 80px;
+    border: 0;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #2E2E2E;
+
+}
+#footer_Form button a, #socialMedia ul li a {
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+#photo ul, #socialMedia ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 70%;
+    margin-left: 10px;
+}
+#socialMedia{
+    margin-bottom: 100px;
+}
+#socialMedia ul {
+    width: 50%;
+    font-size: larger;
+
+}
+#socialMedia ul li{
+    background-color: gray;
+    padding: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+#footer_Content {
+    background: #E9E9E9;
+    padding: 20px 0px;
+    margin-left: 10px;
+}
+#footer_Content p {
+    color: #454545;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#socialMedia ul :hover{
+    background-color: #ff530a;
+}
+.face {
+    margin-left: 3.5px;
+}
+.dribbb {
+    margin-left: 1px;
+}
+.be {
+    margin-left: -1px;
+}
+.twi {
+    margin-left: 1px;
+}
