@@ -24,7 +24,7 @@ header img {
     width: 100%;
 }
 
-header::before { 
+header::before {                                                            /* Effetto Overlay */
     content: "";
     background: url(../images/overlay-pattern.png) black;
     opacity: 0.3;   
@@ -307,17 +307,473 @@ label[for=nav8], label[for=nav9] {
 
 /* About Us - Gennaro */
 
+#aboutUs {
+    background-color: #F6F6F6;
+    padding: 70px 0;
+    text-align: center;
+}
 
+#aboutUs h1, #aboutUs p {
+    padding: 0 15px;
+}
 
+#aboutUs h1 {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 40px 0;
+    margin: 0;
+    line-height: 1.1;
+    position: relative;
+}
+
+#aboutUs h1 span {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ff5333;
+}
+
+#aboutUs p {
+    color: #959595;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    padding-top: 40px;
+}
+
+#aboutUs h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 140px;
+    height: 1px;
+    background: #CBC4B5;
+    margin-left: -70px;
+}
+
+@media screen and (min-width: 768px) {
+    #aboutUs {
+        padding: 100px 0;
+    }
+
+    #aboutUs h1 {
+        font-size: 36px;
+    }
+
+    #aboutUs h1 span {
+        font-size: 45px;
+    }
+}
 
 /* Blog - Lorenzo */
 
 
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blog h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    text-align: center;
+    width: 90%;
+}
+
+.inner-blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#blog h3 {
+    position: relative;
+}
+#blog h3::before {
+    content: "";
+    position: absolute;
+    left: 55%;
+    bottom: -16px;
+    width: 90px;
+    height: 1px;
+    background: #CBC4B5;
+    margin-left: -70px;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+    grid-template-columns: 1fr 1fr;
+    
+    }    
+}
+
 
 /* Menu - David */
 
+#menu {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+}
 
+#menu_container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+#menu_title {
+    visibility: visible;                        /*Animation*/
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-name: entrance;
+}
+
+#menu_title h1 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: normal;
+    font-size: 22px;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.menu_orange {
+    color: #ff530a;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+#menu_line {
+    width: 140px;
+    height: 0.5px;
+    background: #C8C1B3;
+    margin: auto;
+    visibility: visible;                        /*Animation*/
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-name: entrance;
+}
+
+#menu_text {
+    padding-top: 40px;
+    text-align: center;
+    color: #9D9D9D;
+    font-size: 16px;
+    line-height: 26px;
+    visibility: visible;                        /*Animation*/
+    animation-duration: 300ms;
+    animation-delay: 400ms;
+    animation-name: entrance;
+}
+
+#menu_text p {
+    margin: 0;
+}
+#menu_secondtitle {
+    margin-top: 115px;
+    padding-bottom: 30px;
+}
+#menu_secondtitle h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#menu_secondtitle span {
+    color: #ff530a;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#menu_plate li {
+    padding: 21px 0px;
+}
+
+#menu_plate ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu_plate h2 {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.menu_price {
+    display: block;
+    color: #938463;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.menu_description p {
+    color: #949494;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 12px;
+    margin: 0;
+}
+
+#menu_button {
+    float: right;
+    text-transform: uppercase;
+    border: 1px solid #FF4F02;
+    margin-top: 30px;
+    padding: 28px 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FF4F02;
+    font-size: 15px;
+    font-weight: 600;
+    
+    /*Animation*/
+    visibility: visible;
+    animation-duration: 500ms;
+    animation-delay: 1200ms;
+    animation-name: scalebutton;
+}
+
+#menu_button:hover {
+    background-color: #FF4F02;
+    color: white;
+}
+
+#pancakes {
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-name: entrance;
+    position: relative;
+}
+
+#chicken {
+    animation-duration: 300ms;
+    animation-delay: 400ms;
+    animation-name: entrance;
+}
+
+#cereal {
+    animation-duration: 300ms;
+    animation-delay: 500ms;
+    animation-name: entrance;
+}
+
+#meat {
+    animation-duration: 300ms;
+    animation-delay: 600ms;
+    animation-name: entrance;
+}
+
+#steak {
+    animation-duration: 300ms;
+    animation-delay: 700ms;
+    animation-name: entrance;
+}
+
+#cesar {
+    animation-duration: 300ms;
+    animation-delay: 800ms;
+    animation-name: entrance;
+}
+
+@keyframes scalebutton {
+    0% { opacity: 0;
+            transform: scale(0.3);}
+    50% {    opacity: 1;
+            transform: scale(1.05);
+    }
+    
+    70% {
+        opacity: 1;
+            transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes entrance {
+    0% { opacity: 0;
+            transform: translateY(20px);}
+    100% {    opacity: 1;
+            transform: translateY(0);
+    }
+}
+
+/* Contacts - Paolo */
+div h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+}
+h3 {
+    color: #2E2E2E;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+h1 span {
+    font-size: 28px;
+    font-weight: bold;
+}
+.orangeText {
+    color: #ff530a;
+}
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    
+}
+form input {
+    height: 40px;
+}
+#footer_Form {
+    padding: 30px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+#footer_Form button {
+    background-color: #ff530a;
+    border: 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px 100px 20px 100px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2E2E2E;
+
+}
+#footer_Form button a, #socialMedia ul li a {
+    color: white;
+    cursor: pointer;
+}
+#footer_Form button a {
+    font-weight: 600;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 15px;
+}
+#photo ul, #socialMedia ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 70%;
+    margin-left: 15px;
+}
+#socialMedia{
+    margin-bottom: 100px;
+}
+#socialMedia ul {
+    width: 50%;
+    font-size: larger;
+
+}
+#socialMedia ul li{
+    background-color: gray;
+    padding: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+#footer_Content {
+    background: #E9E9E9;
+    padding: 20px 0px;
+    margin-left: 15px;
+}
+#footer_Content p {
+    color: #454545;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#socialMedia ul :hover{
+    background-color: #ff530a;
+}
+.face {
+    margin-left: 3.5px;
+}
+.dribbb {
+    margin-left: 1px;
+}
+.be {
+    margin-left: -1px;
+}
+.twi {
+    margin-left: 1px;
+}
+section p{
+    color: #474747;
+    font-size: 12px;
+}
+/*MEDIA QUERIES*/
+@media screen and (min-width:768px) {
+    #address ul {
+        display: flex;
+    }
+    #address ul li {
+        margin: 10px;
+    }
+    #socialMedia ul {
+        width: 30%;
+    }
+    #photo ul {
+        width: 50%;
+    }
+    #footer_Form {
+        align-items: center;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #footer_Form {
+        align-items: flex-end;
+    }
+    #buttonForm {
+        margin-right: -35px;
+    }
+
+    #footer_Info {
+        display: flex;
+    }
+    #address ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #address ul li {
+        margin: 0px;
+    }
+    h3 {
+        display: block;
+    }
+}
 
 
 /* news - Alex */
@@ -428,3 +884,4 @@ label[for=nav8], label[for=nav9] {
 
 
 /* Contacts - Paolo */
+
