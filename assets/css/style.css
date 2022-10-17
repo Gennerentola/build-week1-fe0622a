@@ -359,6 +359,51 @@ label[for=nav8], label[for=nav9] {
 
 /* Menu - David */
 
+#menu {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#menu_container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#menu_title h1 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: normal;
+    font-size: 22px;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.menu_orange {
+    color: #ff530a;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+#menu_line {
+    width: 140px;
+    height: 0.5px;
+    background: #C8C1B3;
+    margin: auto;
+}
+
+#menu_text {
+    padding-top: 40px;
+    text-align: center;
+    color: #9D9D9D;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#menu_text p {
+    margin: 0;
+}
 
 
 
