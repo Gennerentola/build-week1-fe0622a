@@ -498,7 +498,6 @@ label[for=nav8], label[for=nav9] {
     animation-duration: 300ms;
     animation-delay: 300ms;
     animation-name: entrance;
-    position: relative;
 }
 
 #chicken {
@@ -529,6 +528,7 @@ label[for=nav8], label[for=nav9] {
     animation-duration: 300ms;
     animation-delay: 800ms;
     animation-name: entrance;
+    position: relative;
 }
 
 @keyframes scalebutton {
@@ -556,5 +556,48 @@ label[for=nav8], label[for=nav9] {
             transform: translateY(0);
     }
 }
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+    #menu {
+        width: 720px;
+        margin:auto
+    }
+
+    .plate_top {
+       position: relative;
+    }
+
+  .plate_top h2 {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+  }
+  .menu_line_bottom {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dotted #C9C9C9;
+    margin-top: 20px;
+  }
+
+  .menu_price {
+ float: right;
+ padding-top: 5px;
+
+  }
+
+  #menu_title h1 {
+    font-size: 36px;
+  }
+
+   .menu_orange {
+    font-size: 45px;
+   }
+}
+    
 
 /* Contacts - Paolo */
