@@ -562,7 +562,8 @@ label[for=nav8], label[for=nav9] {
 @media screen and (min-width: 768px) {
     #menu {
         width: 720px;
-        margin:auto
+        margin:auto;
+        margin-bottom: 70px;
     }
 
     .plate_top {
@@ -598,6 +599,18 @@ label[for=nav8], label[for=nav9] {
     font-size: 45px;
    }
 }
+
+@media screen and (min-width: 992px) {
+    #menu {
+        width: 100%;
+    }
+
+    #menu_container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
     
 
 /* Contacts - Paolo */
