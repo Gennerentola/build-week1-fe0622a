@@ -323,20 +323,32 @@ label[for=nav8], label[for=nav9] {
 /* news - Alex */
 #news{
     background-image: url(../images/subscribe-bg.jpg);
-    padding: 100px 15px;
+    padding: 100px 0;
     text-align: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    padding: 0 15px;
+}
+#news::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url(../images/overlay-pattern.png) black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 #news h1{
     font-size: 30px;
     color: #fff;
     font-weight: 500;
-    padding: 40px 0px;
+    padding: 40px 0;
     position: relative;
-    margin: 0;
 }
 #news h1:before{
         content: "";
@@ -352,7 +364,6 @@ label[for=nav8], label[for=nav9] {
     padding: 25px 0px;
     color: #fff;
     font-size: 18px;
-    margin: 0;
 }
 #news h1 span{
     font-size: 25px;
@@ -370,13 +381,14 @@ label[for=nav8], label[for=nav9] {
     line-height: 1.42857143;
     color: #555;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-sizing: border-box;
+    font-family: myfont;
 }
 .btn{
     width: 212px;
     height: 65px;
     border: none;
     background: #7EC3BB;
-    color: #fff;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 2px;
@@ -385,6 +397,11 @@ label[for=nav8], label[for=nav9] {
     cursor: pointer;
     padding: 6px 12px;
     transition: .3s all;
+    /* position: absolute; */
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
 }
 .btn:hover{
     background-color: #69a8a1;
@@ -396,11 +413,13 @@ label[for=nav8], label[for=nav9] {
     #inputNews{
         width: 450px;
         background: #fff;
-        border: none;
+    }
+    #news form{
+        text-align: center;
     }
     #news form div{
         display: inline-block;
-        text-align: center;
+        margin: -2px;
     }
 
 }
