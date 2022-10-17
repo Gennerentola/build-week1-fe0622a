@@ -307,101 +307,32 @@ label[for=nav8], label[for=nav9] {
 
 /* About Us - Gennaro */
 
-#aboutUs {
-    background-color: #F6F6F6;
-    padding: 70px 0;
-    text-align: center;
-}
 
-#aboutUs h1, #aboutUs p {
-    padding: 0 15px;
-}
 
-#aboutUs h1 {
-    font-size: 22px;
-    font-weight: 500;
-    padding: 40px 0;
-    margin: 0;
-    line-height: 1.1;
-    position: relative;
-}
-
-#aboutUs h1 span {
-    font-size: 28px;
-    font-weight: 600;
-    color: #ff5333;
-}
-
-#aboutUs p {
-    color: #959595;
-    font-size: 16px;
-    line-height: 26px;
-    margin: 0;
-    padding-top: 40px;
-}
-
-#aboutUs h1::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 140px;
-    height: 1px;
-    background: #CBC4B5;
-    margin-left: -70px;
-}
-
-@media screen and (min-width: 768px) {
-    #aboutUs {
-        padding: 100px 0;
-    }
-
-    #aboutUs h1 {
-        font-size: 36px;
-    }
-
-    #aboutUs h1 span {
-        font-size: 45px;
-    }
-}
 
 /* Blog - Lorenzo */
 
 
-#blog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-#blog h1 {
-    text-align: center;
-}
 
-.container {
-    display: grid;
-    text-align: center;
-    width: 90%;
-}
+/* Menu - David */
 
-.inner-blog-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
 
-#blog h3 {
+
+
+
+/* Contacts - Paolo */
+h1 {
     position: relative;
 }
-#blog h3::before {
-    content: "";
+#contacts h1 ::before{
+    content: '';
     position: absolute;
-    left: 55%;
-    bottom: -16px;
-    width: 90px;
+    left: 50%;
+    top: 230px;
+    width: 140px;
     height: 1px;
-    background: #CBC4B5;
+    background: #c8c1b3;
     margin-left: -70px;
 }
 
@@ -694,6 +625,7 @@ label[for=nav8], label[for=nav9] {
 
 
 /* Contacts - Paolo */
+
 div h1 {
     text-align: center;
     font-size: 22px;
@@ -782,7 +714,6 @@ ul {
 #footer_Content {
     background: #E9E9E9;
     padding: 20px 0px;
-    margin-left: 15px;
 }
 #footer_Content p {
     color: #454545;
@@ -842,6 +773,8 @@ section p{
 
     #footer_Info {
         display: flex;
+        width: 940px;
+        margin: auto;
     }
     #address ul {
         display: flex;
@@ -850,8 +783,29 @@ section p{
     #address ul li {
         margin: 0px;
     }
-    h3 {
-        display: block;
+    #footer_Info div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #address ul {
+        padding: -30px;
+    }
+    #photo {
+        margin-bottom: 30px;
+    }
+    #photo li {
+        margin: 10px;
+    }
+    #photo h3, #socialMedia h3 {
+        margin-left: 24px;
+    }
+    #socialMedia li {
+        margin: 10px;
+    }
+    .face {
+        margin-left: 3px;
+        width: 20px;
     }
 }
 
