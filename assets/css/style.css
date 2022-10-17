@@ -464,8 +464,6 @@ label[for=nav8], label[for=nav9] {
 #menu_text {
     padding-top: 40px;
     text-align: center;
-    color: #9D9D9D;
-    font-size: 16px;
     line-height: 26px;
     visibility: visible;                        /*Animation*/
     animation-duration: 300ms;
@@ -475,6 +473,8 @@ label[for=nav8], label[for=nav9] {
 
 #menu_text p {
     margin: 0;
+    font-size: 16px;
+    color: #9D9D9D;
 }
 #menu_secondtitle {
     margin-top: 115px;
@@ -659,7 +659,12 @@ label[for=nav8], label[for=nav9] {
 
 @media screen and (min-width: 992px) {
     #menu {
-        width: 100%;
+        width: 940px;
+    }
+
+    #menu_text p {
+        padding-left: 130px;
+        padding-right: 130px;
     }
 
     #menu_container {
@@ -668,7 +673,23 @@ label[for=nav8], label[for=nav9] {
     }
 }
 
-    
+@media screen and (min-width: 1200px){
+    #menu {
+        width: 1140px;
+    }
+
+    #menu_container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    #menu_text p {
+        font-size: 16px;
+        color: #9D9D9D;
+    }
+}
+
+
 
 
 
