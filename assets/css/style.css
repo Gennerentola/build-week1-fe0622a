@@ -314,9 +314,96 @@ label[for=nav8], label[for=nav9] {
 
 
 
-
 /* Menu - David */
 
+
+
+
+
+/* news - Alex */
+#news{
+    background-image: url(../images/subscribe-bg.jpg);
+    padding: 100px 15px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+#news h1{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    padding: 40px 0px;
+    position: relative;
+    margin: 0;
+}
+#news h1:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 140px;
+        height: 1px;
+        background: #C8C1B3;
+        margin-left: -70px;
+}
+#news p{
+    padding: 25px 0px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+}
+#news h1 span{
+    font-size: 25px;
+    color: #ff530a;
+    font-weight: 600;
+}
+#inputNews{
+    width: 100%;
+    background: #fff;
+    opacity: 0.9;
+    border: none;
+    height: 65px;
+    font-size: 15px;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    color: #555;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+.btn{
+    width: 212px;
+    height: 65px;
+    border: none;
+    background: #7EC3BB;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 6px 12px;
+    transition: .3s all;
+}
+.btn:hover{
+    background-color: #69a8a1;
+}
+#news form{
+    text-align: left;
+}
+@media screen and (min-width: 768px){
+    #inputNews{
+        width: 450px;
+        background: #fff;
+        border: none;
+    }
+    #news form div{
+        display: inline-block;
+        text-align: center;
+    }
+
+}
 
 
 
