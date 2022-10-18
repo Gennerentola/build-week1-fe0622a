@@ -298,8 +298,7 @@ label[for=nav9] {
 @media screen and (min-width:992px) {
 
     #main_nav, #featured {
-        width: 940px;
-        margin-inline: auto;        
+        width: 940px;       
     }
 
     #switch + ul {
