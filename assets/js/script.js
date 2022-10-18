@@ -20,8 +20,6 @@ function next() {
 
 
 /*
-
-
 function next() {
     let display = document.querySelector('input[name="next"]:checked').id;
     let move = display;
@@ -32,4 +30,3 @@ function next() {
     document.getElementById(display).checked = false;    
 }
 */
-//document.write(move);

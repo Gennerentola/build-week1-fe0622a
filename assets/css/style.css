@@ -54,7 +54,7 @@ header::before {                                                            /* E
     grid-template-columns: 20%;   
     align-items: center;
     position: relative;
-    border-bottom: 1px solid #ffffff99;    
+    border-bottom: 1px solid #ffffff6c;    
 }
 
 #main_nav > nav img {
@@ -109,14 +109,28 @@ header::before {                                                            /* E
 /* ////////////////////////////////////////// FEATURED E CAROUSEL /////////////////////////////////////////////// */
 #featured {
     background-color: white;
-    padding-block: 50px;
-}
-
-#navigator {
+    padding-block: 65px 54px;
     margin-inline: 15px;
+    position: relative;
 }
 
-#navigator input[type=radio] {
+#navigator > div {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+button[onclick="next()"] {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #AA9D84;
+    font-size: 40px;
+    position:absolute;
+    right:0;    
+}
+
+input[name=next] {
     display: none;
 }
 
@@ -139,12 +153,13 @@ header::before {                                                            /* E
 
 #slider {
     display:flex;
+    width:100%;
 }
 
 #slider > img {
-    display: block;
-    min-width:50%;
-    height: 170px;   
+    height: 170px;
+    min-width: 100%;
+    border-radius: 5px;   
 }
 
 #featured nav > ul {
@@ -183,11 +198,15 @@ input[id="nav7"]:checked ~ #carousel > #slider { transform: translateX(-300%); }
 input[id="nav8"]:checked ~ #carousel > #slider { transform: translateX(-102%); }
 input[id="nav9"]:checked ~ #carousel > #slider { transform: translateX(-170%); }
 
-label[for=nav8], label[for=nav9] {
+label[for=nav9] {
     display:none;
 }
 
 @media screen and (min-width:480px) {
+    
+    #slider > img {
+        min-width:50%;   
+    }
 
     label[for=nav2], label[for=nav4], label[for=nav6] {
         display:none;
@@ -227,19 +246,29 @@ label[for=nav8], label[for=nav9] {
         display: none;
     }
 
-    #navigator {
+    #featured > div {
         margin-inline: 40px;
     }
 
     #featured {
         margin-top:5px;
-        padding-block: 50px;
+        padding-block: 48px;
     }
     
     #slider > img {
         min-width: initial;
         height: 161.2px;
-        padding-right: 15px;            
+        padding-right: 11px;            
+    }
+
+    button[onclick="next()"] {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        color: #AA9D84;
+        font-size: 40px;
+        position:absolute;
+        right:40px;    
     }
 
     label[for=nav8], label[for=nav9]  {
@@ -618,7 +647,7 @@ div h1 {
     font-size: 22px;
     font-weight: lighter;
 }
-h3 {
+#contacts h3, #info h3 {   /* Ho cambiato il selettore dal generico h3 */
     color: #2E2E2E;
     font-size: 20px;
     font-weight: 600;
