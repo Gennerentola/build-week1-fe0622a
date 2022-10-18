@@ -502,7 +502,13 @@ label[for=nav9] {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+  .inner-blog-container:not(.description-blog-container) {
     overflow: hidden;
+  }
+  .description-blog-container:hover + .inner-blog-container img {
+    transform: scale(1.2) rotate(10deg);
+    transition: all 0.8s ease-in-out;
   }
   .inner-blog-container img:hover {
     transform: scale(1.2) rotate(10deg);
@@ -535,19 +541,18 @@ label[for=nav9] {
     margin-left: -70px;
   }
   .more-info-blog {
-    background-color: #fe530b;
-    padding: 28px 85px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
     position: absolute;
-    bottom: -9em;
+    bottom: 9em;
+    left: 16px;
+    
+  
   }
   .more-info-blog a {
     text-decoration: none;
     color: white;
+    background-color: #fe530b;
+    padding: 32px 95px;
+    font-size: 16px;
   }
   @media screen and (min-width: 768px) {
     #blog .container {
@@ -578,7 +583,7 @@ label[for=nav9] {
       width: 30px;
       height: 30px;
       margin-top: -15px;
-      background: rgb(10, 10, 10);
+      background: #fff;
       transform: rotate(45deg);
       margin-left: -15px;
       z-index: 1;
@@ -596,10 +601,10 @@ label[for=nav9] {
       z-index: 1;
     }
     .more-info-blog {
-      bottom: -104px;
-      right: 244px;
+      position: relative;
+      bottom: -70px;
+      left: -2px;
     }
-  }
   @media screen and (min-width: 992px) {
     #blog .container {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -620,11 +625,11 @@ label[for=nav9] {
     .blog-text {
       margin: unset;
     }
-  
     .more-info-blog {
-      bottom: -72px;
-      right: 0;
+      bottom: -32px;
+      left: 337px;
     }
+  
   }
   @media screen and (min-width: 1200px) {
     #blog .container {
@@ -644,10 +649,8 @@ label[for=nav9] {
       width: 285px;
     }
     .more-info-blog {
-      bottom: -72px;
-      right: 0;
-      width: 113px;
-      border: 1px solid #FE530B;
+      bottom: -32px;
+      left: 437px;
     }
   }
 
@@ -1321,5 +1324,3 @@ ul {
         margin-inline: auto;
     }
 }
-
-
