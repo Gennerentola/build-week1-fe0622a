@@ -1175,6 +1175,14 @@ ul {
         width: 70%;
         margin-left: 15%;
     }
+    #contacts{
+        width: 720px;
+        margin-inline: auto;
+    }
+    #footer_Info {
+        width: 700px;
+        margin-inline: auto;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -1241,6 +1249,14 @@ ul {
     #contacts {
         margin-bottom: 70px;
     }
+    #contacts{
+        width: 940px;
+        margin-inline: auto;
+    }
+    #footer_Info {
+        width: 900px;
+        margin-inline: auto;
+    }
 
 }
 @media screen and (min-width:1200px) {
@@ -1272,6 +1288,14 @@ ul {
     #buttonForm {
         width: 45%;
         margin-left: 55%;
+    }
+    #contacts{
+        width: 1140px;
+        margin-inline: auto;
+    }
+    #footer_Info {
+        width: 1100px;
+        margin-inline: auto;
     }
 }
 
