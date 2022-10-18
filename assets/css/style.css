@@ -417,6 +417,23 @@ label[for=nav9] {
     #aboutUs h1 span {
         font-size: 45px;
     }
+
+    #aboutUs p {
+        width: 720px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #aboutUs p {
+        width: 940px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #aboutUs p {
+        width: 1140px;
+    }
 }
 
 /* Blog - Lorenzo */
