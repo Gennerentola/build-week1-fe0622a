@@ -153,11 +153,13 @@ input[name=next] {
 
 #slider {
     display:flex;
+    width:100%;
 }
 
 #slider > img {
     height: 170px;
-    width: 420px;   
+    min-width: 100%;
+    border-radius: 5px;   
 }
 
 #featured nav > ul {
@@ -203,8 +205,7 @@ label[for=nav9] {
 @media screen and (min-width:480px) {
     
     #slider > img {
-        width: auto;
-        min-width: 50%;   
+        min-width:50%;   
     }
 
     label[for=nav2], label[for=nav4], label[for=nav6] {
@@ -251,13 +252,23 @@ label[for=nav9] {
 
     #featured {
         margin-top:5px;
-        padding-block: 50px;
+        padding-block: 48px;
     }
     
     #slider > img {
         min-width: initial;
         height: 161.2px;
-        padding-right: 15px;            
+        padding-right: 11px;            
+    }
+
+    button[onclick="next()"] {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        color: #AA9D84;
+        font-size: 40px;
+        position:absolute;
+        right:40px;    
     }
 
     label[for=nav8], label[for=nav9]  {
@@ -993,7 +1004,7 @@ div .footer_h1 {
     font-size: 22px;
     font-weight: lighter;
 }
-.footer_h3 {
+h3 {
     color: #2E2E2E;
     font-size: 20px;
     font-weight: 600;
