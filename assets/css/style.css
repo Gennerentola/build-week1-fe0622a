@@ -412,7 +412,6 @@ label[for=nav8], label[for=nav9] {
     }    
 }
 
-
 /* Menu - David */
 
 #menu {
@@ -464,6 +463,8 @@ label[for=nav8], label[for=nav9] {
 #menu_text {
     padding-top: 40px;
     text-align: center;
+    color: #9D9D9D;
+    font-size: 16px;
     line-height: 26px;
     visibility: visible;                        /*Animation*/
     animation-duration: 300ms;
@@ -473,8 +474,6 @@ label[for=nav8], label[for=nav9] {
 
 #menu_text p {
     margin: 0;
-    font-size: 16px;
-    color: #9D9D9D;
 }
 #menu_secondtitle {
     margin-top: 115px;
@@ -554,6 +553,7 @@ label[for=nav8], label[for=nav9] {
     animation-duration: 300ms;
     animation-delay: 300ms;
     animation-name: entrance;
+    position: relative;
 }
 
 #chicken {
@@ -584,7 +584,6 @@ label[for=nav8], label[for=nav9] {
     animation-duration: 300ms;
     animation-delay: 800ms;
     animation-name: entrance;
-    position: relative;
 }
 
 @keyframes scalebutton {
@@ -613,86 +612,6 @@ label[for=nav8], label[for=nav9] {
     }
 }
 
-
-/* Media queries */
-
-@media screen and (min-width: 768px) {
-    #menu {
-        width: 720px;
-        margin:auto;
-        margin-bottom: 70px;
-    }
-
-    .plate_top {
-       position: relative;
-    }
-
-  .plate_top h2 {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    background: #fff;
-  }
-  .menu_line_bottom {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dotted #C9C9C9;
-    margin-top: 20px;
-  }
-
-  .menu_price {
- float: right;
- padding-top: 5px;
-
-  }
-
-  #menu_title h1 {
-    font-size: 36px;
-  }
-
-   .menu_orange {
-    font-size: 45px;
-   }
-}
-
-@media screen and (min-width: 992px) {
-    #menu {
-        width: 940px;
-    }
-
-    #menu_text p {
-        padding-left: 130px;
-        padding-right: 130px;
-    }
-
-    #menu_container {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    #menu {
-        width: 1140px;
-    }
-
-    #menu_container {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-
-    #menu_text p {
-        font-size: 16px;
-        color: #9D9D9D;
-    }
-}
-
-
-
-
-
 /* Contacts - Paolo */
 div h1 {
     text-align: center;
@@ -703,7 +622,7 @@ h3 {
     color: #2E2E2E;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 h1 span {
     font-size: 28px;
@@ -726,19 +645,15 @@ form input {
 #footer_Form {
     padding: 30px;
     margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
 }
 #footer_Form button {
     background-color: #ff530a;
+    padding: 20px 80px 20px 80px;
     border: 0;
     margin-top: 20px;
-    box-sizing: border-box;
-    padding: 20px 100px 20px 100px;
     width: 100%;
+    box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
     color: #2E2E2E;
@@ -748,20 +663,16 @@ a {
     color: white;
     cursor: pointer;
 }
-#footer_Form button a {
-    font-weight: 600;
-}
+
 ul {
     list-style-type: none;
-    padding: 0px;
-    margin-left: 15px;
 }
 #photo ul, #socialMedia ul {
     display: flex;
     justify-content: space-between;
     padding: 0;
     width: 70%;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 #socialMedia{
     margin-bottom: 100px;
@@ -782,7 +693,7 @@ ul {
 #footer_Content {
     background: #E9E9E9;
     padding: 20px 0px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 #footer_Content p {
     color: #454545;
@@ -859,13 +770,12 @@ section p{
 /* news - Alex */
 #news{
     background-image: url(../images/subscribe-bg.jpg);
-    padding: 100px 0;
+    padding: 100px 15px;
     text-align: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
-    padding: 0 15px;
 }
 #news::before {
     content: "";
@@ -887,14 +797,14 @@ section p{
     position: relative;
 }
 #news h1:before{
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 140px;
-        height: 1px;
-        background: #C8C1B3;
-        margin-left: -70px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 140px;
+    height: 1px;
+    background: #C8C1B3;
+    margin-left: -70px;
 }
 #news p{
     padding: 25px 0px;
@@ -932,8 +842,6 @@ section p{
     margin-top: 20px;
     cursor: pointer;
     padding: 6px 12px;
-    transition: .3s all;
-    /* position: absolute; */
 }
 .btn a{
     text-decoration: none;
@@ -945,6 +853,9 @@ section p{
 #news form{
     text-align: left;
 }
+/* .newsTransition{
+
+} */
 @media screen and (min-width: 768px){
     #inputNews{
         width: 450px;
@@ -957,5 +868,6 @@ section p{
         display: inline-block;
         margin: -2px;
     }
+    
 
 }
