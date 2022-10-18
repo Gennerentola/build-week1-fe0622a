@@ -928,6 +928,9 @@ label[for=nav9] {
     font-weight: 500;
     padding: 40px 0;
     position: relative;
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-name: news;
 }
 #news h1:before{
     content: "";
@@ -943,6 +946,9 @@ label[for=nav9] {
     padding: 25px 0px;
     color: #fff;
     font-size: 18px;
+    animation-duration: 300ms;
+    animation-delay: 400ms;
+    animation-name: news;
 }
 #news h1 span{
     font-size: 25px;
@@ -986,6 +992,13 @@ label[for=nav9] {
 #news form{
     text-align: left;
 }
+.containerNews{
+    position: relative;
+}
+@keyframes news{
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
 @media screen and (min-width: 768px){
     #inputNews{
         width: 450px;
@@ -999,6 +1012,7 @@ label[for=nav9] {
         margin: -2px;
     }
 }
+
 
 /* Contacts - Paolo */
 .footer_h1 {
