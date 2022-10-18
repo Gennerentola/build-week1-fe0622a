@@ -1008,11 +1008,7 @@ label[for=nav9] {
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-}
-
-.btnNews a{
     color: #fff;
-    text-decoration: none;
 }
 .btnNews a:hover{
     background-color: #69a8a1;
