@@ -136,7 +136,8 @@ button[onclick="next()"] {
     font-size: 40px;
     position:absolute;
     right:0;
-    top:37px;    
+    top:37px;
+    cursor: pointer;    
 }
 
 input[name=next] {
@@ -213,8 +214,16 @@ label[for=nav9] {
 
 @media screen and (min-width:480px) {
     
+    #featured {
+        padding-block: 64px;
+    }
+
     #slider > img {
         min-width:50%;   
+    }
+
+    button[onclick="next()"] {
+        top: 51px;    
     }
 
     label[for=nav2], label[for=nav4], label[for=nav6] {
@@ -263,8 +272,7 @@ label[for=nav9] {
     }
 
     #featured {
-        margin-top:5px;
-        padding-block: 45px;
+        padding-block: 55px;
     }
     
     #slider > img {
@@ -274,13 +282,8 @@ label[for=nav9] {
     }
 
     button[onclick="next()"] {
-        border: 0;
-        padding: 0;
-        background-color: transparent;
-        color: #AA9D84;
-        font-size: 40px;
-        position:absolute;
-        right:40px;    
+        right:40px;
+        top: 42px;    
     }
 
     label[for=nav8], label[for=nav9]  {
@@ -303,7 +306,7 @@ label[for=nav9] {
         justify-content: space-around;
         line-height:1;
         grid-area: 1 / 4 / 1 / 6;
-        padding: 10px 54px 15px 17px;     
+        padding: 10px 55px 15px 40px;     
     }
 
     #main_nav > nav {
@@ -315,12 +318,16 @@ label[for=nav9] {
     }
 
     #featured {
-        margin-top:0;
+        margin-top:7px;
     }
 
     #slider > img {
         height: 147.5px;
         padding-right: 30px;            
+    }
+
+    button[onclick="next()"] {
+        top:32px;    
     }
 
     label[for=nav3] {
@@ -339,14 +346,18 @@ label[for=nav9] {
         width: 1140px;      
     }
 
+    #featured {
+        padding-block: 45px;
+    }
+
     #slider > img {
         height: 187px;
-        padding-right: 31px;            
+        padding-right: 30.5px;            
     }
 
     #switch + ul {
         justify-content: space-evenly;
-        padding: 15px 35px 15px 135px ;     
+        padding: 10px 40px 15px 168px;     
     }
 }
 
