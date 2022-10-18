@@ -999,19 +999,26 @@ label[for=nav9] {
 .btnNews{
     width: 212px;
     height: 65px;
+    margin-top: 20px;
     border: none;
     background: #7EC3BB;
+    text-align: center;
+    cursor: pointer;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 20px;
-    cursor: pointer;
-    padding: 6px 12px;
 }
+
 .btnNews a{
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
+}
+.btnNews a:hover{
+    background-color: #69a8a1;
+}
+.btnNews:active{
+    border: 2px solid white;
 }
 .btnNews:hover{
     background-color: #69a8a1;
