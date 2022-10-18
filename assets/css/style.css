@@ -303,7 +303,7 @@ label[for=nav9] {
         justify-content: space-around;
         line-height:1;
         grid-area: 1 / 4 / 1 / 6;
-        padding-inline: 10px 55px;     
+        padding: 10px 54px 15px 17px;     
     }
 
     #main_nav > nav {
