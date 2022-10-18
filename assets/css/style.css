@@ -1057,14 +1057,13 @@ label[for=nav9] {
     padding: 15px;
     margin-bottom: 10px;
     border: 1px solid gray;
-    
+    box-sizing: border-box;
 }
 #form2 input {
     height: 40px;
 }
 #footer_Form {
     padding: 30px;
-    margin-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -1072,25 +1071,18 @@ label[for=nav9] {
 a {
     text-decoration: none;
     color: #2E2E2E;
-
 }
-#buttonForm {
-    margin-top: 50px;
-    width: 454px;
-    background-color: #ff530a;
-    border: 0;
-    margin-top: 20px;
-    box-sizing: border-box;
+#buttonForm a {
+    font-weight: 600;
+    color: white;
     background-color: #ff530a;
     border: 0;
     margin-top: 20px;
     box-sizing: border-box;
     padding: 20px 100px 20px 100px;
     text-align: center;
-}
-#buttonForm a {
-    font-weight: 600;
-    color: white;
+    display: block;
+    width: 100%;
 }
 #buttonForm, #socialMedia ul li a {
     color: white;
@@ -1165,21 +1157,19 @@ ul {
     #photo ul {
         width: 50%;
     }
-    #footer_Form {
-        align-items: center;
-    }
     #form2{
         width: 100%;
+    }
+    #buttonForm {
+        width: 70%;
+        margin-left: 15%;
     }
 }
 
 @media screen and (min-width:992px) {
-    #footer_Form {
-        align-items: flex-end;
-    }
     #buttonForm {
-        margin-right: -35px;
-        width: 500px;
+        width: 50%;
+        margin-left: 50%;
     }
     .footer_h1 {
         font-size: 36px;
@@ -1240,17 +1230,14 @@ ul {
     #contacts {
         margin-bottom: 70px;
     }
+
 }
 @media screen and (min-width:1200px) {
     .quartaFoto {
         margin-top: 0px;
         margin-left: 0px;
     }
-    #buttonForm {
-        width: 550px;
-    }
     #footer_Info {
-        margin-left: 15px;
         width: 100%;
     }
     #address, #footer_Blog, #photo {
@@ -1271,7 +1258,10 @@ ul {
     #footer_Blog h4 {
         margin-bottom: 10px;
     }
-
+    #buttonForm {
+        width: 45%;
+        margin-left: 55%;
+    }
 }
 
 
