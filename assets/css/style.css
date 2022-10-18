@@ -1015,18 +1015,20 @@ label[for=nav9] {
     background: #c8c1b3;
     margin-left: -70px;
 }
-div .footer_h1 {
+.footer_h1 {
     text-align: center;
     font-size: 22px;
     font-weight: lighter;
 }
-h3 {
+.footer_h3 {
     color: #2E2E2E;
     font-size: 20px;
     font-weight: 600;
     margin-left: 15px;
     margin-top: 30px;
-
+}
+.first_h3 {
+    margin-left: 30px;
 }
 .footer_h1 span {
     font-size: 28px;
@@ -1040,7 +1042,7 @@ h3 {
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
-    border: 2px solid gray;
+    border: 1px solid gray;
     
 }
 #form2 input {
@@ -1053,26 +1055,32 @@ h3 {
     flex-direction: column;
     align-items: left;
 }
-#footer_Form button {
-    background-color: #ff530a;
-    border: 0;
-    margin-top: 20px;
-    box-sizing: border-box;
-    padding: 20px 100px 20px 100px;
-    width: 100%;
-}
-
 a {
     text-decoration: none;
     color: #2E2E2E;
 
 }
-#footer_Form button a, #socialMedia ul li a {
+#buttonForm {
+    margin-top: 50px;
+    width: 454px;
+    background-color: #ff530a;
+    border: 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #ff530a;
+    border: 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px 100px 20px 100px;
+    text-align: center;
+}
+#buttonForm a {
+    font-weight: 600;
+    color: white;
+}
+#buttonForm, #socialMedia ul li a {
     color: white;
     cursor: pointer;
-}
-#footer_Form button a {
-    font-weight: 600;
 }
 ul {
     list-style-type: none;
@@ -1157,8 +1165,14 @@ ul {
     }
     #buttonForm {
         margin-right: -35px;
+        width: 500px;
     }
-
+    .footer_h1 {
+        font-size: 36px;
+    }
+    .footer_h1 span {
+        font-size: 45px;
+    }
     #footer_Info {
         display: flex;
         width: 940px;
@@ -1209,6 +1223,41 @@ ul {
     #socialMedia h3 {
         margin-top: 0px;
     }
+    #contacts {
+        margin-bottom: 70px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .quartaFoto {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    #buttonForm {
+        width: 550px;
+    }
+    #footer_Info {
+        margin-left: 15px;
+        width: 100%;
+    }
+    #address, #footer_Blog, #photo {
+        font-size: 18px;
+    }
+    #address h4 {
+        font-size: 20px;
+        font-weight:lighter;
+    }
+    #footer_Blog h4 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    #address li {
+        line-height: 0px;
+    }
+
+    #footer_Blog h4 {
+        margin-bottom: 10px;
+    }
+
 }
 
 
