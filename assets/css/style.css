@@ -1060,14 +1060,20 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 @media screen and (min-width: 768px){
     #inputNews{
         width: 450px;
-        background: #fff;
     }
     #news form{
         text-align: center;
     }
-    #news form div{
-        display: inline-block;
-        margin: -2px;
+    #news form{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .btnNews{
+        margin-top: 0;
+    }
+    #news div p{
+        margin-bottom: 0;
     }
 }
 
