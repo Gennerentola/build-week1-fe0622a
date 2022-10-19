@@ -362,6 +362,13 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding: 0 15px;
 }
 
+#news p, #news h1, #aboutUs h1, #aboutUs p, #aboutUs img{
+    animation: news 0.5s forwards;
+    -webkit-animation: news 0.5s forwards;
+    -moz-animation: news 0.5s forwards;
+    opacity: 0;
+}
+
 #aboutUs h1 {
     font-size: 22px;
     font-weight: 500;
@@ -369,7 +376,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin: 0;
     line-height: 1.1;
     position: relative;
-    animation-delay: 0.2s;
+    animation-delay: 0.4s;
 }
 
 #aboutUs h1 span {
@@ -384,7 +391,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     line-height: 26px;
     margin: 0;
     padding-top: 40px;
-    animation-delay: 0.4s;
+    animation-delay: 0.7s;
 }
 
 #aboutUs h1::before {
@@ -738,24 +745,29 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: #FF4F02;
     font-size: 15px;
     font-weight: 600;
-    animation-name: scalebutton;
+    animation: scalebutton 0.5s forwards;
+    -webkit-animation: scalebutton 0.5s forwards;
+    -moz-animation: scalebutton 0.5s forwards;
     animation-delay: 1.2s;
-    animation-duration: 0.5s;
+    opacity: 0;
 }
-
 #menu_button:hover {
     background-color: #FF4F02;
     color: white;
 }
 
 #name, #email, #testo, .first_h3 {
-    animation-duration: 0.5s;
-    animation-name: entrance;
+    animation: entrance 1s forwards;
+    -webkit-animation: entrance 1s forwards;
+    -moz-animation: entrance 1s forwards;
+    opacity: 0;
 }
 
 #pancakes, #chicken, #cereal, #meat, #steak, #cesar, #menu_line, #menu_text, #menu_title {
-    animation-duration: 0.3s;
-    animation-name: entrance;
+    animation: entrance 0.3s forwards;
+    -webkit-animation: entrance 0.3s forwards;
+    -moz-animation: entrance 0.3s forwards;
+    opacity: 0;
 }
 
 #pancakes, #menu_line, #menu_title,.first_h3 {
@@ -788,35 +800,23 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 
 #buttonForm button {
-    animation-name: scalebutton; 
+    animation: scalebutton 0.5s forwards;
+    -webkit-animation: scalebutton 0.5s forwards;
+    -moz-animation: scalebutton 0.5s forwards;
     animation-delay: 1.3s;
-    animation-duration: 0.5s;
+    opacity: 0;
 }
 
 @keyframes scalebutton {
-    0% { opacity: 0;
-            transform: scale(0.3);}
-    50% {    opacity: 1;
-            transform: scale(1.05);
-    }
-    
-    70% {
-        opacity: 1;
-            transform: scale(.9);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+    0% {opacity: 0; transform: scale(0.3);}
+    50% {opacity: 1; transform: scale(1.05);}
+    70% {opacity: 1; transform: scale(.9);}
+    100% {opacity: 1; transform: scale(1);}
 }
 
 @keyframes entrance {
-    0% { opacity: 0;
-            transform: translateY(20px);}
-    100% {    opacity: 1;
-            transform: translateY(0);
-    }
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
 }
 
 
@@ -924,10 +924,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background: #C8C1B3;
     margin-left: -70px;
 }
-#news p, #news h1, #aboutUs h1, #aboutUs p, #aboutUs img{
-    animation-duration: 0.3s;
-    animation-name: news;
-}
+
 #news p{
     padding: 25px 0;
     color: #fff;
@@ -1056,8 +1053,9 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     align-items: left;
 }
 #address, #footer_Blog, #photo, #socialMedia {
-    animation: last forwards;
-    animation-duration: 1.5s;
+    animation: last 1.5s forwards;
+    -webkit-animation: last 1.5s forwards;
+    -moz-animation: last 1.5s forwards;
     opacity: 0;
 }
 #address {
@@ -1146,14 +1144,8 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 
 /*ANIMATION*/
 @keyframes last {
-    0% {
-        opacity: 0;
-        transform: translateX(-20%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    0% {opacity: 0; transform: translateX(-20%);}
+    100% {opacity: 1; transform: translateX(0);}
 }
 
 /*MEDIA QUERIES*/
@@ -1297,4 +1289,3 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         width: 1140px;
     }
 }
-
