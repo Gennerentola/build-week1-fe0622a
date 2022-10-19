@@ -753,10 +753,9 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: #FF4F02;
     font-size: 15px;
     font-weight: 600;
-    
-    /*Animation*/
-    animation-delay: 1200ms;
     animation-name: scalebutton;
+    animation-delay: 1200ms;
+    animation-duration: 500ms;
 }
 
 #menu_button:hover {
@@ -782,7 +781,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     animation-delay: 400ms;
 }
 
-#cereal, #menu_button {
+#cereal {
     animation-delay: 500ms;
 }
 
