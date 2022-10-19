@@ -1126,14 +1126,14 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 40px;
 }
 #footer_Form {
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: left;
 }
-a {
+#address a,#footer_Blog a, #footer_Blog p {
     text-decoration: none;
-    color: #2E2E2E;
+    color: #474747;
 }
 #buttonForm a {
     font-weight: 600;
@@ -1210,10 +1210,14 @@ ul {
 @media screen and (min-width:768px) {
     #address ul {
         display: flex;
+        justify-content: space-between;
+        margin-inline: 0;
     }
     #address ul li {
-        margin: 10px;
+        margin-inline: 0;
+        width: 30%;
     }
+    
     #socialMedia ul {
         width: 30%;
     }
@@ -1232,8 +1236,18 @@ ul {
         margin-inline: auto;
     }
     #footer_Info {
-        width: 700px;
+        width: 720px;
         margin-inline: auto;
+        padding-block: 0;
+    }
+    .footer_h3 {
+        margin-left: 0;
+    }
+    #footer_Info ul {
+        margin-inline: 0;
+    }
+    #footer_Form {
+        padding-inline: 0;
     }
 }
 
@@ -1306,8 +1320,11 @@ ul {
         margin-inline: auto;
     }
     #footer_Info {
-        width: 900px;
+        width: 940px;
         margin-inline: auto;
+    }
+    #address ul li {
+        width: auto;
     }
 
 }
@@ -1346,7 +1363,7 @@ ul {
         margin-inline: auto;
     }
     #footer_Info {
-        width: 1100px;
+        width: 1140px;
         margin-inline: auto;
     }
 }
