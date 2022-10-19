@@ -1039,8 +1039,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         margin-bottom: 0;
     }
 }
-
-
 /* Contacts - Paolo */
 .footer_h1 {
     position: relative;
@@ -1093,7 +1091,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     flex-direction: column;
     align-items: left;
 }
-#address a,#footer_Blog a, #footer_Blog p {
+#address a, #address p, #footer_Blog a, #footer_Blog p,  #footer_Content a {
     text-decoration: none;
     color: #474747;
 }
@@ -1116,6 +1114,9 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     list-style-type: none;
     padding: 0px;
     margin-left: 15px;
+}
+#address .fa {
+    padding-right: 25px;
 }
 #photo ul, #socialMedia ul {
     display: flex;
