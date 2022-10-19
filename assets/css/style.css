@@ -1055,6 +1055,20 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     flex-direction: column;
     align-items: left;
 }
+#address, #footer_Blog, #photo, #socialMedia {
+    animation: last forwards;
+    animation-duration: 1.5s;
+    opacity: 0;
+}
+#address {
+    animation-delay: 0.2s;
+}
+#footer_Blog {
+    animation-delay: 0.7s;
+}
+#photo, #socialMedia {
+    animation-delay: 1.5s;
+}
 #address a, #address p, #footer_Blog a, #footer_Blog p,  #footer_Content a {
     text-decoration: none;
     color: #474747;
@@ -1128,6 +1142,18 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 .twi {
     margin-left: 1px;
+}
+
+/*ANIMATION*/
+@keyframes last {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /*MEDIA QUERIES*/
@@ -1271,3 +1297,4 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         width: 1140px;
     }
 }
+
