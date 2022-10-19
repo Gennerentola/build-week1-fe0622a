@@ -728,7 +728,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding-bottom: 30px;
 }
 #menu_secondtitle h3 {
-    text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
     margin: 0;
@@ -777,7 +776,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 
 #menu_button {
     float: right;
-    text-transform: uppercase;
     border: 1px solid #FF4F02;
     margin-top: 30px;
     padding: 28px 100px;
