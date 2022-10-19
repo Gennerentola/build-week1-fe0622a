@@ -1045,6 +1045,9 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 .footer_h1 {
     position: relative;
     margin-bottom: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
 }
 #contacts h1 ::before{
     content: '';
@@ -1055,11 +1058,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 1px;
     background: #c8c1b3;
     margin-left: -70px;
-}
-.footer_h1 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: lighter;
 }
 .footer_h3 {
     color: #2E2E2E;
@@ -1099,9 +1097,8 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     text-decoration: none;
     color: #474747;
 }
-#buttonForm a {
+#buttonForm button {
     font-weight: 600;
-    color: white;
     background-color: #ff530a;
     border: 0;
     margin-top: 20px;
@@ -1111,7 +1108,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     display: block;
     width: 100%;
 }
-#buttonForm, #socialMedia ul li a {
+#buttonForm button, #socialMedia ul li a {
     color: white;
     cursor: pointer;
 }
@@ -1133,7 +1130,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 #socialMedia ul {
     width: 50%;
     font-size: larger;
-
 }
 #socialMedia ul li{
     background-color: gray;
@@ -1142,7 +1138,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 16px;
     border-radius: 50%;
 }
-
 #footer_Content {
     background: #E9E9E9;
     padding: 20px 0px;
@@ -1195,13 +1190,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         width: 70%;
         margin-left: 15%;
     }
-    #contacts{
+    #contacts, #footer_Info {
         width: 720px;
         margin-inline: auto;
     }
     #footer_Info {
-        width: 720px;
-        margin-inline: auto;
         padding-block: 0;
     }
     .footer_h3 {
@@ -1243,9 +1236,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         flex-direction: column;
         width: 100%;
     }
-    #address ul {
-        padding: -30px;
-    }
     #photo {
         margin-bottom: 30px;
     }
@@ -1257,7 +1247,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     }
     #socialMedia li {
         margin: 15px;
-
     }
     .face {
         margin-left: 3px;
@@ -1279,18 +1268,12 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     #contacts {
         margin-bottom: 70px;
     }
-    #contacts{
+    #contacts, #footer_Info {
         width: 940px;
-        margin-inline: auto;
-    }
-    #footer_Info {
-        width: 940px;
-        margin-inline: auto;
     }
     #address ul li {
         width: auto;
     }
-
 }
 @media screen and (min-width:1200px) {
     .quartaFoto {
@@ -1310,24 +1293,16 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     #footer_Blog h4 {
         font-size: 20px;
         font-weight: bolder;
+        margin-bottom: 10px;
     }
     #address li {
         line-height: 0px;
-    }
-
-    #footer_Blog h4 {
-        margin-bottom: 10px;
     }
     #buttonForm {
         width: 45%;
         margin-left: 55%;
     }
-    #contacts{
+    #contacts, #footer_Info{
         width: 1140px;
-        margin-inline: auto;
-    }
-    #footer_Info {
-        width: 1140px;
-        margin-inline: auto;
     }
 }
