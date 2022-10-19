@@ -51,6 +51,10 @@ header::before {                                                            /* E
     font-size: 15px;
 }
 
+#main_nav label, #featured label, #featured button {
+    cursor: pointer;
+}
+
 #main_nav div { 
     grid-area: 1/1/1/5;
     display: flex;
@@ -117,7 +121,7 @@ header::before {                                                            /* E
 /* ////////////////////////////////////////// FEATURED E CAROUSEL /////////////////////////////////////////////// */
 #featured {
     background-color: white;
-    padding-block: 50px;
+    padding-block: 50px 56px;
     margin-inline: 15px;
     position: relative;
 }
@@ -136,8 +140,7 @@ button[onclick="next()"] {
     font-size: 40px;
     position:absolute;
     right:0;
-    top:37px;
-    cursor: pointer;    
+    top:37px;        
 }
 
 input[name=next] {
@@ -158,7 +161,7 @@ input[name=next] {
 
 #carousel {
     overflow: hidden;    
-    padding-block: 30px 54px;  
+    padding-block: 30px 53px;  
 }
 
 #slider {
@@ -166,13 +169,14 @@ input[name=next] {
     width:100%;
 }
 
-#slider > img {
-    height: 170px;
+.slide {
+    height: 171px;
+    border-bottom: 1px solid white inset;
     min-width: 100%;
     border-radius: 5px;   
 }
 
-#featured nav > ul {
+#navigator ul {
     display:flex;
     margin:0;       /*////////////////*/    
     padding: 0;     /* fix su default */
@@ -182,53 +186,80 @@ input[name=next] {
     color: #dddddd;
 }
 
-#featured nav li {
-    padding-inline:2.6px ;
+label[name=scroller] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right:5px;
+    background-color: #dadada;
 }
 
-input[id=nav1]:checked ~ nav label[for=nav1],
-input[id=nav2]:checked ~ nav label[for=nav2],
-input[id=nav3]:checked ~ nav label[for=nav3],
-input[id=nav4]:checked ~ nav label[for=nav4],
-input[id=nav5]:checked ~ nav label[for=nav5],
-input[id=nav6]:checked ~ nav label[for=nav6],
-input[id=nav7]:checked ~ nav label[for=nav7],
-input[id=nav8]:checked ~ nav label[for=nav8],
-input[id=nav9]:checked ~ nav label[for=nav9] {
-    color: #ff5333;
+input[id=nav1]:checked ~ ul label[for=nav1],
+input[id=nav2]:checked ~ ul label[for=nav2],
+input[id=nav3]:checked ~ ul label[for=nav3],
+input[id=nav4]:checked ~ ul label[for=nav4],
+input[id=nav5]:checked ~ ul label[for=nav5],
+input[id=nav6]:checked ~ ul label[for=nav6],
+input[id=nav7]:checked ~ ul label[for=nav7],
+input[id=nav8]:checked ~ ul label[for=nav8],
+input[id=nav9]:checked ~ ul label[for=nav9], 
+input[id=nav10]:checked ~ ul label[for=nav10],
+input[id=nav11]:checked ~ ul label[for=nav11],
+input[id=nav12]:checked ~ ul label[for=nav12],
+input[id=nav13]:checked ~ ul label[for=nav13],
+input[id=nav14]:checked ~ ul label[for=nav14],
+input[id=nav15]:checked ~ ul label[for=nav15],
+input[id=nav16]:checked ~ ul label[for=nav16],
+input[id=nav17]:checked ~ ul label[for=nav17],
+input[id=nav18]:checked ~ ul label[for=nav18] {
+    background-color: #ff5333;
 }
 
-input[id="nav1"]:checked ~ #carousel > #slider { transform: translateX(0); }
-input[id="nav2"]:checked ~ #carousel > #slider { transform: translateX(-50%); }
-input[id="nav3"]:checked ~ #carousel > #slider { transform: translateX(-100%); }
-input[id="nav4"]:checked ~ #carousel > #slider { transform: translateX(-150%); }
-input[id="nav5"]:checked ~ #carousel > #slider { transform: translateX(-200%); }
-input[id="nav6"]:checked ~ #carousel > #slider { transform: translateX(-250%); }
-input[id="nav7"]:checked ~ #carousel > #slider { transform: translateX(-300%); }
-input[id="nav8"]:checked ~ #carousel > #slider { transform: translateX(-102%); }
-input[id="nav9"]:checked ~ #carousel > #slider { transform: translateX(-170%); }
+input[id=nav1]:checked ~ #carousel > #slider { transform: translateX(0); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav2]:checked ~ #carousel > #slider { transform: translateX(-25%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav3]:checked ~ #carousel > #slider { transform: translateX(-33%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav4]:checked ~ #carousel > #slider { transform: translateX(-50%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav5]:checked ~ #carousel > #slider { transform: translateX(-66%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav6]:checked ~ #carousel > #slider { transform: translateX(-75%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav7]:checked ~ #carousel > #slider { transform: translateX(-99%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav8]:checked ~ #carousel > #slider { transform: translateX(-100%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav9]:checked ~ #carousel > #slider { transform: translateX(-132%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav10]:checked ~ #carousel > #slider { transform: translateX(-150%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav11]:checked ~ #carousel > #slider { transform: translateX(-165%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav12]:checked ~ #carousel > #slider { transform: translateX(-200%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav13]:checked ~ #carousel > #slider { transform: translateX(-250%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav14]:checked ~ #carousel > #slider { transform: translateX(-300%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav15]:checked ~ #carousel > #slider { transform: translateX(-400%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav16]:checked ~ #carousel > #slider { transform: translateX(-500%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav17]:checked ~ #carousel > #slider { transform: translateX(-600%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav18]:checked ~ #carousel > #slider { transform: translateX(-700%); transition: transform 1s ease-in-out 0.1s;}
 
-label[for=nav9] {
+label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=nav6], label[for=nav7], label[for=nav9], label[for=nav10], label[for=nav11], label[for=nav13] {
     display:none;
 }
 
 @media screen and (min-width:480px) {
     
     #featured {
-        padding-block: 64px;
+        padding-block: 50px 56px;
     }
 
-    #slider > img {
-        min-width:50%;   
+    #carousel {   
+        padding-block: 30px 54px;  
     }
 
-    button[onclick="next()"] {
-        top: 51px;    
+    .slide {
+        min-width:50%;
+        height: 170px;   
     }
 
-    label[for=nav2], label[for=nav4], label[for=nav6] {
+    label[for=nav14] {
+        display:inline;
+    }
+
+    label[for=nav10], label[for=nav15], label[for=nav16], label[for=nav17], label[for=nav18] {
         display:none;
-    }
+    }   
 }
 
 @media screen and (min-width:768px) {
@@ -272,25 +303,24 @@ label[for=nav9] {
     }
 
     #featured {
-        padding-block: 55px;
+        padding-block: 50px 56px;
     }
     
-    #slider > img {
+    .slide {
         min-width: initial;
         height: 161.2px;
         padding-right: 11px;            
     }
 
     button[onclick="next()"] {
-        right:40px;
-        top: 42px;    
+        right:40px; 
     }
 
-    label[for=nav8], label[for=nav9]  {
-        display:inline-block;
+    label[for=nav7], label[for=nav11]  {
+        display:inline;
     }
 
-    label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=nav6], label[for=nav7] {
+    label[for=nav3], label[for=nav4], label[for=nav5], label[for=nav6], label[for=nav8], label[for=nav9], label[for=nav12], label[for=nav13], label[for=nav14] {
         display:none;
     }
 }
@@ -302,8 +332,6 @@ label[for=nav9] {
     }
 
     #switch + ul {
-        justify-content: space-around;
-        line-height:1;
         grid-area: 1 / 4 / 1 / 6;
         padding: 10px 55px 15px 40px;     
     }
@@ -317,23 +345,23 @@ label[for=nav9] {
     }
 
     #featured {
-        margin-top:7px;
+        padding-block: 52px 56px;
     }
 
-    #slider > img {
+    .slide {
         height: 147.5px;
         padding-right: 30px;            
     }
 
     button[onclick="next()"] {
-        top:32px;    
+        top:39px;    
     }
 
-    label[for=nav3] {
+    label[for=nav8] {
         display:inline-block;
     }
 
-    label[for=nav8], label[for=nav9]  {
+    label[for=nav7], label[for=nav10], label[for=nav11]  {
         display:none;
     }
 
@@ -345,11 +373,7 @@ label[for=nav9] {
         width: 1140px;      
     }
 
-    #featured {
-        padding-block: 45px;
-    }
-
-    #slider > img {
+    .slide {
         height: 187px;
         padding-right: 30.5px;            
     }
