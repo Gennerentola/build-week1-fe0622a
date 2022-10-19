@@ -441,7 +441,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background-attachment: fixed;
     position: relative;
   }
-  
   #blog h1 {
     text-align: center;
     font-size: 22px;
@@ -464,7 +463,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background: #c8c1b3;
     margin-left: -70px;
   }
-  
   #blog .container {
     display: grid;
     text-align: center;
@@ -473,7 +471,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     z-index: 1;
     position: relative;
   }
-  
   #blog::before {
     content: '';
     position: absolute;
@@ -486,7 +483,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background: url(../images/overlay-pattern.png) #000000;
     opacity: 0.3;
   }
-  
   .inner-blog-container {
     display: flex;
     flex-direction: column;
@@ -496,11 +492,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
   .inner-blog-container:not(.description-blog-container) {
     overflow: hidden;
   }
-  .description-blog-container:hover + .inner-blog-container img {
-    transform: scale(1.2) rotate(10deg);
-    transition: all 0.8s ease-in-out;
-  }
-  .inner-blog-container img:hover {
+  .description-blog-container:hover + .inner-blog-container img, .inner-blog-container img:hover {
     transform: scale(1.2) rotate(10deg);
     transition: all 0.8s ease-in-out;
   }
@@ -508,13 +500,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding: 25px 0;
     position: relative;
   }
-  
   .description-blog-container p {
     color: #959595;
     line-height: 20px;
     margin-top: 34px;
   }
-  
   #blog h3 {
     position: relative;
     line-height: 26px;
@@ -534,8 +524,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     position: absolute;
     bottom: 9em;
     left: 16px;
-    
-  
   }
   .more-info-blog a {
     text-decoration: none;
@@ -544,6 +532,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding: 32px 95px;
     font-size: 16px;
   }
+  /* MEDIA SCREEN */
   @media screen and (min-width: 768px) {
     #blog .container {
       grid-template-columns: 1fr 1fr;
@@ -599,8 +588,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
   @media screen and (min-width: 992px) {
     #blog .container {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    #blog .container {
       width: 940px;
     }
     .inner-blog-container img {
@@ -615,12 +602,12 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     }
     .blog-text {
       margin: unset;
+      padding-inline: 12px;
     }
     .more-info-blog {
       bottom: -32px;
       left: 337px;
     }
-  
   }
   @media screen and (min-width: 1200px) {
     #blog .container {
@@ -629,7 +616,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     .description-blog-container p {
       margin: 0 38px;
     }
-    
     #blog h3 {
       margin: 0 70px 50px;
     }
@@ -640,7 +626,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
       width: 285px;
     }
     .more-info-blog {
-      bottom: -32px;
       left: 437px;
     }
   }
