@@ -51,6 +51,10 @@ header::before {                                                            /* E
     font-size: 15px;
 }
 
+#main_nav label, #featured label, #featured button {
+    cursor: pointer;
+}
+
 #main_nav div { 
     grid-area: 1/1/1/5;
     display: flex;
@@ -117,7 +121,7 @@ header::before {                                                            /* E
 /* ////////////////////////////////////////// FEATURED E CAROUSEL /////////////////////////////////////////////// */
 #featured {
     background-color: white;
-    padding-block: 50px;
+    padding-block: 50px 56px;
     margin-inline: 15px;
     position: relative;
 }
@@ -136,7 +140,7 @@ button[onclick="next()"] {
     font-size: 40px;
     position:absolute;
     right:0;
-    top:37px;    
+    top:37px;        
 }
 
 input[name=next] {
@@ -157,7 +161,7 @@ input[name=next] {
 
 #carousel {
     overflow: hidden;    
-    padding-block: 30px 54px;  
+    padding-block: 30px 53px;  
 }
 
 #slider {
@@ -165,13 +169,14 @@ input[name=next] {
     width:100%;
 }
 
-#slider > img {
-    height: 170px;
+.slide {
+    height: 171px;
+    border-bottom: 1px solid white inset;
     min-width: 100%;
     border-radius: 5px;   
 }
 
-#featured nav > ul {
+#navigator ul {
     display:flex;
     margin:0;       /*////////////////*/    
     padding: 0;     /* fix su default */
@@ -181,45 +186,80 @@ input[name=next] {
     color: #dddddd;
 }
 
-#featured nav li {
-    padding-inline:2.6px ;
+label[name=scroller] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right:5px;
+    background-color: #dadada;
 }
 
-input[id=nav1]:checked ~ nav label[for=nav1],
-input[id=nav2]:checked ~ nav label[for=nav2],
-input[id=nav3]:checked ~ nav label[for=nav3],
-input[id=nav4]:checked ~ nav label[for=nav4],
-input[id=nav5]:checked ~ nav label[for=nav5],
-input[id=nav6]:checked ~ nav label[for=nav6],
-input[id=nav7]:checked ~ nav label[for=nav7],
-input[id=nav8]:checked ~ nav label[for=nav8],
-input[id=nav9]:checked ~ nav label[for=nav9] {
-    color: #ff5333;
+input[id=nav1]:checked ~ ul label[for=nav1],
+input[id=nav2]:checked ~ ul label[for=nav2],
+input[id=nav3]:checked ~ ul label[for=nav3],
+input[id=nav4]:checked ~ ul label[for=nav4],
+input[id=nav5]:checked ~ ul label[for=nav5],
+input[id=nav6]:checked ~ ul label[for=nav6],
+input[id=nav7]:checked ~ ul label[for=nav7],
+input[id=nav8]:checked ~ ul label[for=nav8],
+input[id=nav9]:checked ~ ul label[for=nav9], 
+input[id=nav10]:checked ~ ul label[for=nav10],
+input[id=nav11]:checked ~ ul label[for=nav11],
+input[id=nav12]:checked ~ ul label[for=nav12],
+input[id=nav13]:checked ~ ul label[for=nav13],
+input[id=nav14]:checked ~ ul label[for=nav14],
+input[id=nav15]:checked ~ ul label[for=nav15],
+input[id=nav16]:checked ~ ul label[for=nav16],
+input[id=nav17]:checked ~ ul label[for=nav17],
+input[id=nav18]:checked ~ ul label[for=nav18] {
+    background-color: #ff5333;
 }
 
-input[id="nav1"]:checked ~ #carousel > #slider { transform: translateX(0); }
-input[id="nav2"]:checked ~ #carousel > #slider { transform: translateX(-50%); }
-input[id="nav3"]:checked ~ #carousel > #slider { transform: translateX(-100%); }
-input[id="nav4"]:checked ~ #carousel > #slider { transform: translateX(-150%); }
-input[id="nav5"]:checked ~ #carousel > #slider { transform: translateX(-200%); }
-input[id="nav6"]:checked ~ #carousel > #slider { transform: translateX(-250%); }
-input[id="nav7"]:checked ~ #carousel > #slider { transform: translateX(-300%); }
-input[id="nav8"]:checked ~ #carousel > #slider { transform: translateX(-102%); }
-input[id="nav9"]:checked ~ #carousel > #slider { transform: translateX(-170%); }
+input[id=nav1]:checked ~ #carousel > #slider { transform: translateX(0); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav2]:checked ~ #carousel > #slider { transform: translateX(-25%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav3]:checked ~ #carousel > #slider { transform: translateX(-33%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav4]:checked ~ #carousel > #slider { transform: translateX(-50%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav5]:checked ~ #carousel > #slider { transform: translateX(-66%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav6]:checked ~ #carousel > #slider { transform: translateX(-75%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav7]:checked ~ #carousel > #slider { transform: translateX(-99%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav8]:checked ~ #carousel > #slider { transform: translateX(-100%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav9]:checked ~ #carousel > #slider { transform: translateX(-132%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav10]:checked ~ #carousel > #slider { transform: translateX(-150%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav11]:checked ~ #carousel > #slider { transform: translateX(-165%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav12]:checked ~ #carousel > #slider { transform: translateX(-200%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav13]:checked ~ #carousel > #slider { transform: translateX(-250%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav14]:checked ~ #carousel > #slider { transform: translateX(-300%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav15]:checked ~ #carousel > #slider { transform: translateX(-400%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav16]:checked ~ #carousel > #slider { transform: translateX(-500%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav17]:checked ~ #carousel > #slider { transform: translateX(-600%); transition: transform 1s ease-in-out 0.1s;}
+input[id=nav18]:checked ~ #carousel > #slider { transform: translateX(-700%); transition: transform 1s ease-in-out 0.1s;}
 
-label[for=nav9] {
+label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=nav6], label[for=nav7], label[for=nav9], label[for=nav10], label[for=nav11], label[for=nav13] {
     display:none;
 }
 
 @media screen and (min-width:480px) {
     
-    #slider > img {
-        min-width:50%;   
+    #featured {
+        padding-block: 50px 56px;
     }
 
-    label[for=nav2], label[for=nav4], label[for=nav6] {
-        display:none;
+    #carousel {   
+        padding-block: 30px 54px;  
     }
+
+    .slide {
+        min-width:50%;
+        height: 170px;   
+    }
+
+    label[for=nav14] {
+        display:inline;
+    }
+
+    label[for=nav10], label[for=nav15], label[for=nav16], label[for=nav17], label[for=nav18] {
+        display:none;
+    }   
 }
 
 @media screen and (min-width:768px) {
@@ -263,31 +303,24 @@ label[for=nav9] {
     }
 
     #featured {
-        margin-top:5px;
-        padding-block: 45px;
+        padding-block: 50px 56px;
     }
     
-    #slider > img {
+    .slide {
         min-width: initial;
         height: 161.2px;
         padding-right: 11px;            
     }
 
     button[onclick="next()"] {
-        border: 0;
-        padding: 0;
-        background-color: transparent;
-        color: #AA9D84;
-        font-size: 40px;
-        position:absolute;
-        right:40px;    
+        right:40px; 
     }
 
-    label[for=nav8], label[for=nav9]  {
-        display:inline-block;
+    label[for=nav7], label[for=nav11]  {
+        display:inline;
     }
 
-    label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=nav6], label[for=nav7] {
+    label[for=nav3], label[for=nav4], label[for=nav5], label[for=nav6], label[for=nav8], label[for=nav9], label[for=nav12], label[for=nav13], label[for=nav14] {
         display:none;
     }
 }
@@ -295,15 +328,12 @@ label[for=nav9] {
 @media screen and (min-width:992px) {
 
     #main_nav, #featured {
-        width: 940px;
-        margin-inline: auto;        
+        width: 940px;       
     }
 
     #switch + ul {
-        justify-content: space-around;
-        line-height:1;
         grid-area: 1 / 4 / 1 / 6;
-        padding-inline: 10px 55px;     
+        padding: 10px 55px 15px 40px;     
     }
 
     #main_nav > nav {
@@ -315,19 +345,23 @@ label[for=nav9] {
     }
 
     #featured {
-        margin-top:0;
+        padding-block: 52px 56px;
     }
 
-    #slider > img {
+    .slide {
         height: 147.5px;
         padding-right: 30px;            
     }
 
-    label[for=nav3] {
+    button[onclick="next()"] {
+        top:39px;    
+    }
+
+    label[for=nav8] {
         display:inline-block;
     }
 
-    label[for=nav8], label[for=nav9]  {
+    label[for=nav7], label[for=nav10], label[for=nav11]  {
         display:none;
     }
 
@@ -339,14 +373,14 @@ label[for=nav9] {
         width: 1140px;      
     }
 
-    #slider > img {
+    .slide {
         height: 187px;
-        padding-right: 31px;            
+        padding-right: 30.5px;            
     }
 
     #switch + ul {
         justify-content: space-evenly;
-        padding: 15px 35px 15px 135px ;     
+        padding: 10px 40px 15px 168px;     
     }
 }
 
@@ -406,6 +440,23 @@ label[for=nav9] {
 
     #aboutUs h1 span {
         font-size: 45px;
+    }
+
+    #aboutUs p {
+        width: 720px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #aboutUs p {
+        width: 940px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #aboutUs p {
+        width: 1140px;
     }
 }
 
@@ -475,7 +526,13 @@ label[for=nav9] {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+  .inner-blog-container:not(.description-blog-container) {
     overflow: hidden;
+  }
+  .description-blog-container:hover + .inner-blog-container img {
+    transform: scale(1.2) rotate(10deg);
+    transition: all 0.8s ease-in-out;
   }
   .inner-blog-container img:hover {
     transform: scale(1.2) rotate(10deg);
@@ -508,19 +565,18 @@ label[for=nav9] {
     margin-left: -70px;
   }
   .more-info-blog {
-    background-color: #fe530b;
-    padding: 28px 85px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
     position: absolute;
-    bottom: -9em;
+    bottom: 9em;
+    left: 16px;
+    
+  
   }
   .more-info-blog a {
     text-decoration: none;
     color: white;
+    background-color: #fe530b;
+    padding: 32px 95px;
+    font-size: 16px;
   }
   @media screen and (min-width: 768px) {
     #blog .container {
@@ -551,7 +607,7 @@ label[for=nav9] {
       width: 30px;
       height: 30px;
       margin-top: -15px;
-      background: rgb(10, 10, 10);
+      background: #fff;
       transform: rotate(45deg);
       margin-left: -15px;
       z-index: 1;
@@ -569,10 +625,11 @@ label[for=nav9] {
       z-index: 1;
     }
     .more-info-blog {
-      bottom: -104px;
-      right: 244px;
+      position: relative;
+      bottom: -70px;
+      left: -2px;
     }
-  }
+    }
   @media screen and (min-width: 992px) {
     #blog .container {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -593,11 +650,11 @@ label[for=nav9] {
     .blog-text {
       margin: unset;
     }
-  
     .more-info-blog {
-      bottom: -72px;
-      right: 0;
+      bottom: -32px;
+      left: 337px;
     }
+  
   }
   @media screen and (min-width: 1200px) {
     #blog .container {
@@ -617,10 +674,8 @@ label[for=nav9] {
       width: 285px;
     }
     .more-info-blog {
-      bottom: -72px;
-      right: 0;
-      width: 113px;
-      border: 1px solid #FE530B;
+      bottom: -32px;
+      left: 437px;
     }
   }
 
@@ -972,19 +1027,22 @@ label[for=nav9] {
 .btnNews{
     width: 212px;
     height: 65px;
+    margin-top: 20px;
     border: none;
     background: #7EC3BB;
+    text-align: center;
+    cursor: pointer;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 20px;
-    cursor: pointer;
-    padding: 6px 12px;
-}
-.btnNews a{
-    text-decoration: none;
     color: #fff;
+}
+.btnNews a:hover{
+    background-color: #69a8a1;
+}
+.btnNews:active{
+    border: 2px solid white;
 }
 .btnNews:hover{
     background-color: #69a8a1;
@@ -1057,14 +1115,13 @@ label[for=nav9] {
     padding: 15px;
     margin-bottom: 10px;
     border: 1px solid gray;
-    
+    box-sizing: border-box;
 }
 #form2 input {
     height: 40px;
 }
 #footer_Form {
     padding: 30px;
-    margin-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -1072,25 +1129,18 @@ label[for=nav9] {
 a {
     text-decoration: none;
     color: #2E2E2E;
-
 }
-#buttonForm {
-    margin-top: 50px;
-    width: 454px;
-    background-color: #ff530a;
-    border: 0;
-    margin-top: 20px;
-    box-sizing: border-box;
+#buttonForm a {
+    font-weight: 600;
+    color: white;
     background-color: #ff530a;
     border: 0;
     margin-top: 20px;
     box-sizing: border-box;
     padding: 20px 100px 20px 100px;
     text-align: center;
-}
-#buttonForm a {
-    font-weight: 600;
-    color: white;
+    display: block;
+    width: 100%;
 }
 #buttonForm, #socialMedia ul li a {
     color: white;
@@ -1165,21 +1215,27 @@ ul {
     #photo ul {
         width: 50%;
     }
-    #footer_Form {
-        align-items: center;
-    }
     #form2{
         width: 100%;
+    }
+    #buttonForm {
+        width: 70%;
+        margin-left: 15%;
+    }
+    #contacts{
+        width: 720px;
+        margin-inline: auto;
+    }
+    #footer_Info {
+        width: 700px;
+        margin-inline: auto;
     }
 }
 
 @media screen and (min-width:992px) {
-    #footer_Form {
-        align-items: flex-end;
-    }
     #buttonForm {
-        margin-right: -35px;
-        width: 500px;
+        width: 50%;
+        margin-left: 50%;
     }
     .footer_h1 {
         font-size: 36px;
@@ -1240,17 +1296,22 @@ ul {
     #contacts {
         margin-bottom: 70px;
     }
+    #contacts{
+        width: 940px;
+        margin-inline: auto;
+    }
+    #footer_Info {
+        width: 900px;
+        margin-inline: auto;
+    }
+
 }
 @media screen and (min-width:1200px) {
     .quartaFoto {
         margin-top: 0px;
         margin-left: 0px;
     }
-    #buttonForm {
-        width: 550px;
-    }
     #footer_Info {
-        margin-left: 15px;
         width: 100%;
     }
     #address, #footer_Blog, #photo {
@@ -1271,7 +1332,16 @@ ul {
     #footer_Blog h4 {
         margin-bottom: 10px;
     }
-
+    #buttonForm {
+        width: 45%;
+        margin-left: 55%;
+    }
+    #contacts{
+        width: 1140px;
+        margin-inline: auto;
+    }
+    #footer_Info {
+        width: 1100px;
+        margin-inline: auto;
+    }
 }
-
-
