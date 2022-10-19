@@ -648,27 +648,17 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 /* Menu - David */
 
 #menu {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    margin-bottom: 70px;
+    padding-block: 70px;
+    margin-bottom: 110px;
 }
 
 #menu_container {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#menu_title {
-    visibility: visible;                        /*Animation*/
-    animation-duration: 300ms;
-    animation-delay: 300ms;
-    animation-name: entrance;
+    padding-inline: 15px;
 }
 
 #menu_title h1 {
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-block: 40px;
     font-weight: normal;
     font-size: 22px;
     color: #2E2E2E;
@@ -686,21 +676,13 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     width: 140px;
     height: 0.5px;
     background: #C8C1B3;
-    margin: auto;
-    visibility: visible;                        /*Animation*/
-    animation-duration: 300ms;
-    animation-delay: 300ms;
-    animation-name: entrance;
+    margin: auto;                      
 }
 
 #menu_text {
     padding-top: 40px;
     text-align: center;
-    line-height: 26px;
-    visibility: visible;                        /*Animation*/
-    animation-duration: 300ms;
-    animation-delay: 400ms;
-    animation-name: entrance;
+    line-height: 26px;                       
 }
 
 #menu_text p {
@@ -745,17 +727,19 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 .menu_price {
     display: block;
     color: #938463;
-    font-size: 14px;
     padding-top: 10px;
 }
 
 .menu_description p {
     color: #949494;
-    font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     padding-top: 12px;
     margin: 0;
+}
+
+#menu_button, #menu_text, #menu_line, #menu_title {
+    visibility: visible;
 }
 
 #menu_button {
@@ -771,8 +755,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     font-weight: 600;
     
     /*Animation*/
-    visibility: visible;
-    animation-duration: 500ms;
     animation-delay: 1200ms;
     animation-name: scalebutton;
 }
@@ -782,40 +764,33 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: white;
 }
 
-#pancakes {
+#pancakes, #chicken, #cereal, #meat, #steak, #cesar, #menu_line, #menu_text, #menu_title {
     animation-duration: 300ms;
+    animation-name: entrance;
+}
+
+#pancakes, #menu_line, #menu_title {
     animation-delay: 300ms;
-    animation-name: entrance;
 }
 
-#chicken {
-    animation-duration: 300ms;
+#chicken, #menu_text {
     animation-delay: 400ms;
-    animation-name: entrance;
 }
 
-#cereal {
-    animation-duration: 300ms;
+#cereal, #menu_button {
     animation-delay: 500ms;
-    animation-name: entrance;
 }
 
 #meat {
-    animation-duration: 300ms;
     animation-delay: 600ms;
-    animation-name: entrance;
 }
 
 #steak {
-    animation-duration: 300ms;
     animation-delay: 700ms;
-    animation-name: entrance;
 }
 
 #cesar {
-    animation-duration: 300ms;
     animation-delay: 800ms;
-    animation-name: entrance;
     position: relative;
 }
 
@@ -851,8 +826,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 @media screen and (min-width: 768px) {
     #menu {
         width: 720px;
-        margin:auto;
-        margin-bottom: 70px;
+        margin-inline:auto;
+    }
+
+    #menu_container {
+        padding-inline: 0px;
     }
 
     .plate_top {
@@ -875,9 +853,8 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
   }
 
   .menu_price {
- float: right;
- padding-top: 5px;
-
+    float: right;
+    padding-top: 5px;
   }
 
   #menu_title h1 {
@@ -895,24 +872,13 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     }
 
     #menu_text p {
-        padding-left: 130px;
-        padding-right: 130px;
-    }
-
-    #menu_container {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-inline: 130px;
     }
 }
 
 @media screen and (min-width: 1200px){
     #menu {
         width: 1140px;
-    }
-
-    #menu_container {
-        padding-right: 30px;
-        padding-left: 30px;
     }
 
     #menu_text p {
