@@ -784,7 +784,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 
 #testo {
-    animation-duration: 1000ms;
+    animation-delay: 1000ms;
 }
 
 #buttonForm button {
@@ -998,6 +998,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         margin-bottom: 0;
     }
 }
+
 /* Contacts - Paolo */
 .footer_h1 {
     position: relative;
