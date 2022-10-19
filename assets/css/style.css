@@ -1037,14 +1037,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     text-transform: uppercase;
     color: #fff;
 }
-.btnNews a:hover{
+.btnNews:hover{
     background-color: #69a8a1;
 }
 .btnNews:active{
     border: 2px solid white;
-}
-.btnNews:hover{
-    background-color: #69a8a1;
 }
 #news form{
     text-align: left;
