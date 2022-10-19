@@ -468,6 +468,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     align-items: center;
     padding-top: 75px;
     padding-bottom: 242px;
+    padding-inline: 15px;
+    background-image: url('../images/blog/blog-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
   }
   
   #blog h1 {
@@ -496,7 +501,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
   #blog .container {
     display: grid;
     text-align: center;
-    width: 95%;
+    width: 100%;
     background-color: white;
     z-index: 1;
     position: relative;
@@ -513,12 +518,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 100%;
     background: url(../images/overlay-pattern.png) #000000;
     opacity: 0.3;
-  }
-  #blog {
-    background-image: url('../images/blog/blog-bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
   }
   
   .inner-blog-container {
@@ -1060,14 +1059,20 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 @media screen and (min-width: 768px){
     #inputNews{
         width: 450px;
-        background: #fff;
     }
     #news form{
         text-align: center;
     }
-    #news form div{
-        display: inline-block;
-        margin: -2px;
+    #news form{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .btnNews{
+        margin-top: 0;
+    }
+    #news div p{
+        margin-bottom: 0;
     }
 }
 
@@ -1121,14 +1126,14 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 40px;
 }
 #footer_Form {
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: left;
 }
-a {
+#address a,#footer_Blog a, #footer_Blog p {
     text-decoration: none;
-    color: #2E2E2E;
+    color: #474747;
 }
 #buttonForm a {
     font-weight: 600;
@@ -1205,10 +1210,14 @@ ul {
 @media screen and (min-width:768px) {
     #address ul {
         display: flex;
+        justify-content: space-between;
+        margin-inline: 0;
     }
     #address ul li {
-        margin: 10px;
+        margin-inline: 0;
+        width: 30%;
     }
+    
     #socialMedia ul {
         width: 30%;
     }
@@ -1227,8 +1236,18 @@ ul {
         margin-inline: auto;
     }
     #footer_Info {
-        width: 700px;
+        width: 720px;
         margin-inline: auto;
+        padding-block: 0;
+    }
+    .footer_h3 {
+        margin-left: 0;
+    }
+    #footer_Info ul {
+        margin-inline: 0;
+    }
+    #footer_Form {
+        padding-inline: 0;
     }
 }
 
@@ -1301,8 +1320,11 @@ ul {
         margin-inline: auto;
     }
     #footer_Info {
-        width: 900px;
+        width: 940px;
         margin-inline: auto;
+    }
+    #address ul li {
+        width: auto;
     }
 
 }
@@ -1341,7 +1363,7 @@ ul {
         margin-inline: auto;
     }
     #footer_Info {
-        width: 1100px;
+        width: 1140px;
         margin-inline: auto;
     }
 }
