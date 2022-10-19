@@ -912,7 +912,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: #fff;
     font-weight: 500;
     padding: 40px 0;
-    animation-delay: 300ms;
+    animation-delay: 0.3s;
 }
 #news h1:before{
     content: "";
@@ -925,14 +925,14 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin-left: -70px;
 }
 #news p, #news h1, #aboutUs h1, #aboutUs p, #aboutUs img{
-    animation-duration: 300ms;
+    animation-duration: 0.3s;
     animation-name: news;
 }
 #news p{
     padding: 25px 0;
     color: #fff;
     font-size: 18px;
-    animation-delay: 400ms;
+    animation-delay: 0.4s;
 }
 #news h1 span{
     font-size: 25px;
