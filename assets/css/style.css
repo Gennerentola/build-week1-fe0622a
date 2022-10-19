@@ -468,6 +468,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     align-items: center;
     padding-top: 75px;
     padding-bottom: 242px;
+    padding-inline: 15px;
+    background-image: url('../images/blog/blog-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
   }
   
   #blog h1 {
@@ -496,7 +501,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
   #blog .container {
     display: grid;
     text-align: center;
-    width: 95%;
+    width: 100%;
     background-color: white;
     z-index: 1;
     position: relative;
@@ -513,12 +518,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 100%;
     background: url(../images/overlay-pattern.png) #000000;
     opacity: 0.3;
-  }
-  #blog {
-    background-image: url('../images/blog/blog-bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
   }
   
   .inner-blog-container {
@@ -1060,14 +1059,20 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 @media screen and (min-width: 768px){
     #inputNews{
         width: 450px;
-        background: #fff;
     }
     #news form{
         text-align: center;
     }
-    #news form div{
-        display: inline-block;
-        margin: -2px;
+    #news form{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .btnNews{
+        margin-top: 0;
+    }
+    #news div p{
+        margin-bottom: 0;
     }
 }
 
