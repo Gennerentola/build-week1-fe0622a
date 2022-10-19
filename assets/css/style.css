@@ -929,7 +929,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    position: relative;
 }
 #news::before {
     content: "";
@@ -948,10 +947,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: #fff;
     font-weight: 500;
     padding: 40px 0;
-    position: relative;
-    animation-duration: 300ms;
     animation-delay: 300ms;
-    animation-name: news;
 }
 #news h1:before{
     content: "";
@@ -963,13 +959,15 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background: #C8C1B3;
     margin-left: -70px;
 }
+#news p, #news h1{
+    animation-duration: 300ms;
+    animation-name: news;
+}
 #news p{
-    padding: 25px 0px;
+    padding: 25px 0;
     color: #fff;
     font-size: 18px;
-    animation-duration: 300ms;
     animation-delay: 400ms;
-    animation-name: news;
 }
 #news h1 span{
     font-size: 25px;
@@ -984,7 +982,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 65px;
     font-size: 15px;
     padding: 6px 12px;
-    line-height: 1.42857143;
+    line-height: 1.4;
     color: #555;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
     box-sizing: border-box;
@@ -1001,7 +999,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 2px;
-    text-transform: uppercase;
     color: #fff;
 }
 .btnNews:hover{
@@ -1013,7 +1010,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 #news form{
     text-align: left;
 }
-.containerNews{
+.containerNews, #news h1, #news{
     position: relative;
 }
 @keyframes news{
@@ -1023,9 +1020,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 @media screen and (min-width: 768px){
     #inputNews{
         width: 450px;
-    }
-    #news form{
-        text-align: center;
     }
     #news form{
         display: flex;
