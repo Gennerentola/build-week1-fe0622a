@@ -1047,6 +1047,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin-bottom: 10px;
     border: 1px solid gray;
     box-sizing: border-box;
+    font-family: myfont;
 }
 #form2 input {
     height: 40px;
