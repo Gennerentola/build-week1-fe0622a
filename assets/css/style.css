@@ -1151,7 +1151,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: white;
     cursor: pointer;
 }
-ul {
+#address ul, #footer_Blog ul, #photo ul, #socialMedia ul {
     list-style-type: none;
     padding: 0px;
     margin-left: 15px;
