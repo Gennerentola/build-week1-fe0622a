@@ -369,6 +369,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin: 0;
     line-height: 1.1;
     position: relative;
+    animation-delay: 0.2s;
 }
 
 #aboutUs h1 span {
@@ -383,6 +384,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     line-height: 26px;
     margin: 0;
     padding-top: 40px;
+    animation-delay: 0.4s;
 }
 
 #aboutUs h1::before {
@@ -923,7 +925,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background: #C8C1B3;
     margin-left: -70px;
 }
-#news p, #news h1{
+#news p, #news h1, #aboutUs h1, #aboutUs p, #aboutUs img{
     animation-duration: 300ms;
     animation-name: news;
 }
