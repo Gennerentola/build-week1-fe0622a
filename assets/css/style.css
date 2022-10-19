@@ -795,6 +795,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: white;
 }
 
+#name, #email, #testo, #buttonForm {
+    animation-duration: 500ms;
+    animation-name: entrance;
+}
+
 #pancakes, #chicken, #cereal, #meat, #steak, #cesar, #menu_line, #menu_text, #menu_title {
     animation-duration: 300ms;
     animation-name: entrance;
@@ -812,7 +817,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     animation-delay: 500ms;
 }
 
-#meat {
+#meat, #name {
     animation-delay: 600ms;
 }
 
@@ -820,9 +825,17 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     animation-delay: 700ms;
 }
 
-#cesar {
+#cesar, #email {
     animation-delay: 800ms;
     position: relative;
+}
+
+#testo {
+    animation-duration: 1000ms;
+}
+
+#buttonForm {
+    animation-duration: 1300ms;
 }
 
 @keyframes scalebutton {
