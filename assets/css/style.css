@@ -450,7 +450,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background-attachment: fixed;
     position: relative;
   }
-  #blog h1 {
+  #blog h2 {
     text-align: center;
     font-size: 22px;
     z-index: 1;
@@ -458,11 +458,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: white;
     margin-bottom: 32px;
   }
-  #blog h1 span {
+  #blog h2 span {
     color: #ff5333;
     font-size: 28px;
   }
-  #blog h1::before {
+  #blog h2::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -552,13 +552,13 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
       grid-template-columns: 1fr 1fr;
       width: 720px;
     }
-    #blog h1 {
+    #blog h2 {
       font-size: 36px;
     }
-    #blog h1 span {
+    #blog h2 span {
       font-size: 45px;
     }
-    #blog h1::before {
+    #blog h2::before {
       top: 230px;
     }
     .inner-blog-container img {
@@ -658,7 +658,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding-inline: 15px;
 }
 
-#menu_title h1 {
+#menu_title h2 {
     text-align: center;
     padding-block: 40px;
     font-weight: normal;
@@ -860,7 +860,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding-top: 5px;
   }
 
-  #menu_title h1 {
+  #menu_title h2 {
     font-size: 36px;
   }
 
@@ -911,14 +911,14 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 100%;
     position: absolute;
 }
-#news h1{
+#news h2{
     font-size: 30px;
     color: #fff;
     font-weight: 500;
     padding: 40px 0;
     animation-delay: 0.3s;
 }
-#news h1:before{
+#news h2:before{
     content: "";
     position: absolute;
     left: 50%;
@@ -935,7 +935,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     font-size: 18px;
     animation-delay: 0.4s;
 }
-#news h1 span{
+#news h2 span{
     font-size: 25px;
     color: #ff530a;
     font-weight: 600;
@@ -998,10 +998,16 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     #news div p{
         margin-bottom: 0;
     }
+    #news h2 {
+        font-size: 36px;
+    }
+    #news h2 span {
+        font-size: 45px;
+    }
 }
 
 /* Contacts - Paolo */
-.footer_h1 {
+#footer_h2 {
     position: relative;
     margin-bottom: 50px;
     text-align: center;
@@ -1011,7 +1017,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     animation-duration: 500ms;
     animation-delay: 300ms;
 }
-#contacts h1 ::before{
+#contacts h2 ::before{
     content: '';
     position: absolute;
     left: 50%;
@@ -1031,7 +1037,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 .first_h3 {
     margin-left: 30px;
 }
-.footer_h1 span {
+#footer_h2 span {
     font-size: 28px;
     font-weight: 600;
 }
@@ -1208,10 +1214,10 @@ address .fa {
         width: 50%;
         margin-left: 50%;
     }
-    .footer_h1 {
+    #footer_h2 {
         font-size: 36px;
     }
-    .footer_h1 span {
+    #footer_h2 span {
         font-size: 45px;
     }
     #footer_info {
