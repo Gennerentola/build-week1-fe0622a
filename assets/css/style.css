@@ -1010,7 +1010,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin-bottom: 50px;
     text-align: center;
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: 500;
     animation-name: news;
     animation-duration: 500ms;
     animation-delay: 300ms;
@@ -1037,10 +1037,16 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 .footer_h1 span {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 600;
 }
 .orangeText {
     color: #ff530a;
+}
+#address .orangeText {
+    font-size: 18px;
+}
+#footer_Blog .orangeText{
+    font-size: 20px;
 }
 #form2 input, #form2 textarea {
     display: block;
@@ -1101,6 +1107,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 #address .fa {
     padding-right: 25px;
+    font-size: 20px;
 }
 #photo ul, #socialMedia ul {
     display: flex;
@@ -1117,7 +1124,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     font-size: larger;
 }
 #socialMedia ul li{
-    background-color: gray;
+    background-color: #949494;
     padding: 10px;
     width: 16px;
     height: 16px;
@@ -1283,7 +1290,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     }
     #footer_Blog h4 {
         font-size: 20px;
-        font-weight: bolder;
+        font-weight: 600;
         margin-bottom: 10px;
     }
     #address li {
