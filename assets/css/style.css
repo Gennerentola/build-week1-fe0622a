@@ -11,6 +11,16 @@ body {
     font-weight: 400;
     color: #333;    
 }
+.orangeHeader {
+    color: #ff530a;
+    font-weight: 600;
+    font-size: 28px;
+}
+@media screen and (min-width: 768px) {
+    .orangeHeader {
+        font-size: 45px;
+       }
+}
 /* Home - Francesco */
 /* ////////////////////////////////////////// HEADER E NAV /////////////////////////////////////////////// */
 header {
@@ -379,12 +389,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     animation-delay: 0.4s;
 }
 
-#aboutUs h1 span {
-    font-size: 28px;
-    font-weight: 600;
-    color: #ff5333;
-}
-
 #aboutUs p {
     color: #959595;
     font-size: 16px;
@@ -457,10 +461,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding: 40px;
     color: white;
     margin-bottom: 32px;
-  }
-  #blog h2 span {
-    color: #ff5333;
-    font-size: 28px;
   }
   #blog h2::before {
     content: '';
@@ -554,9 +554,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     }
     #blog h2 {
       font-size: 36px;
-    }
-    #blog h2 span {
-      font-size: 45px;
     }
     #blog h2::before {
       top: 230px;
@@ -665,13 +662,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     font-size: 22px;
     color: #2E2E2E;
     margin: 0;
-}
-
-.menu_orange {
-    color: #ff530a;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 28px;
 }
 
 #menu_line {
@@ -863,10 +853,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
   #menu_title h2 {
     font-size: 36px;
   }
-
-   .menu_orange {
-    font-size: 45px;
-   }
 }
 
 @media screen and (min-width: 992px) {
@@ -1036,10 +1022,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 .first_h3 {
     margin-left: 30px;
-}
-#footer_h2 span {
-    font-size: 28px;
-    font-weight: 600;
 }
 .orangeText {
     color: #ff530a;
@@ -1216,9 +1198,6 @@ address .fa {
     }
     #footer_h2 {
         font-size: 36px;
-    }
-    #footer_h2 span {
-        font-size: 45px;
     }
     #footer_info {
         display: flex;
