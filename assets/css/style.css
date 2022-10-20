@@ -1045,7 +1045,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 #address .orangeText {
     font-size: 18px;
 }
-#footer_Blog .orangeText{
+#footer_blog .orangeText{
     font-size: 20px;
 }
 #form2 input, #form2 textarea {
@@ -1066,7 +1066,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     flex-direction: column;
     align-items: left;
 }
-#address, #footer_Blog, #photo, #socialMedia {
+#address, #footer_blog, #photo, #socialMedia {
     animation: last 1.5s forwards;
     -webkit-animation: last 1.5s forwards;
     -moz-animation: last 1.5s forwards;
@@ -1075,13 +1075,13 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 #address {
     animation-delay: 0.2s;
 }
-#footer_Blog {
+#footer_blog {
     animation-delay: 0.7s;
 }
 #photo, #socialMedia {
     animation-delay: 1.5s;
 }
-#address a, #address p, #footer_Blog a, #footer_Blog p,  #footer_Content a {
+#address a, #address p, #footer_blog a, #footer_blog p,  #footer_Content a {
     text-decoration: none;
     color: #474747;
 }
@@ -1100,7 +1100,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: white;
     cursor: pointer;
 }
-#address ul, #footer_Blog ul, #photo ul, #socialMedia ul {
+#address ul, #footer_blog ul, #photo ul, #socialMedia ul {
     list-style-type: none;
     padding: 0px;
     margin-left: 15px;
@@ -1188,17 +1188,17 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         width: 70%;
         margin-left: 15%;
     }
-    #contacts, #footer_Info {
+    #contacts, #footer_info {
         width: 720px;
         margin-inline: auto;
     }
-    #footer_Info {
+    #footer_info {
         padding-block: 0;
     }
     .footer_h3 {
         margin-left: 0;
     }
-    #footer_Info ul {
+    #footer_info ul {
         margin-inline: 0;
     }
     #footer_Form {
@@ -1217,7 +1217,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     .footer_h1 span {
         font-size: 45px;
     }
-    #footer_Info {
+    #footer_info {
         display: flex;
         width: 940px;
         margin: auto;
@@ -1229,7 +1229,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     #address ul li {
         margin: 0px;
     }
-    #footer_Info div {
+    #footer_info div {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1266,7 +1266,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     #contacts {
         margin-bottom: 70px;
     }
-    #contacts, #footer_Info {
+    #contacts, #footer_info {
         width: 940px;
     }
     #address ul li {
@@ -1278,17 +1278,17 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         margin-top: 0px;
         margin-left: 0px;
     }
-    #footer_Info {
+    #footer_info {
         width: 100%;
     }
-    #address, #footer_Blog, #photo {
+    #address, #footer_blog, #photo {
         font-size: 18px;
     }
     #address h4 {
         font-size: 20px;
         font-weight:lighter;
     }
-    #footer_Blog h4 {
+    #footer_blog h4 {
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 10px;
@@ -1300,7 +1300,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         width: 45%;
         margin-left: 55%;
     }
-    #contacts, #footer_Info{
+    #contacts, #footer_info{
         width: 1140px;
     }
 }
