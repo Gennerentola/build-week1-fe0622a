@@ -71,10 +71,9 @@ header::before {                                                            /* E
     position: relative;  
 }
 
-#main_nav > nav img {
-    
+#main_nav > nav img {    
     width: 189px;
-    padding: 18px 10px 32px;      
+    padding: 18px 10px 29px;      
 }
 
 #bars {
@@ -309,7 +308,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     }
 
     #main_nav > nav img {
-        padding: 20px 25px 30px 40px;      
+        padding: 20px 25px 27px 40px;      
     }
 
     #featured {
