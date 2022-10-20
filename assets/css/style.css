@@ -21,6 +21,24 @@ body {
         font-size: 45px;
        }
 }
+ul {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+#news h2::before, #contacts h2::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px; 
+    width: 140px;
+    height: 1px;
+    background: #C8C1B3;
+    margin-left: -70px;
+}
+#contacts h2::before {
+    top:60px;
+}
 /* Home - Francesco */
 /* ////////////////////////////////////////// HEADER E NAV /////////////////////////////////////////////// */
 header {
@@ -35,12 +53,12 @@ header img {
 }
 
 header::before {                                                            /* Effetto Overlay */
-    content: "";
-    background: url(../images/overlay-pattern.png) black;
-    opacity: 0.3;   
+    content: '';
+    position: absolute;    
     width: 100%;
     height: 100%;
-    position: absolute;
+    background: url(../images/overlay-pattern.png) #000000;
+    opacity: 0.3;
 }
 
 #bars span {
@@ -81,10 +99,9 @@ header::before {                                                            /* E
     position: relative;  
 }
 
-#main_nav > nav img {
-    
+#main_nav > nav img {    
     width: 189px;
-    padding: 18px 10px 32px;      
+    padding: 18px 10px 29px;      
 }
 
 #bars {
@@ -93,8 +110,6 @@ header::before {                                                            /* E
 
 #switch + ul {
     overflow: hidden;
-    margin:0;
-    list-style-type: none;
     padding: 15px 15px 10px;
     grid-area: 2 / 1 / 2 / 6;
     line-height: 1.34;   
@@ -172,10 +187,7 @@ button[onclick="next()"] {
 
 #featured ul {
     display:flex;
-    margin:0;       /*////////////////*/    
-    padding: 0;     /* fix su default */
     justify-content: center;
-    list-style-type: none;
     font-size: 11px;
     color: #dddddd;
 }
@@ -251,11 +263,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         margin-bottom: -85px;         
     }
 
-    #main_nav, #featured {
-        width: 720px;
-        margin-inline: auto;        
-    }
-
     #main_nav {
         top:-10px;
     }
@@ -305,10 +312,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 
 @media screen and (min-width:992px) {
 
-    #main_nav, #featured {
-        width: 940px;       
-    }
-
     #switch + ul {
         grid-area: 1 / 4 / 1 / 6;
         padding: 10px 55px 15px 40px;     
@@ -347,7 +350,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 
 @media screen and (min-width:1200px) {
 
-    #main_nav, #featured {
+    #main_nav, #featured, #aboutUs p  {
         width: 1140px;      
     }
 
@@ -372,7 +375,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding: 0 15px;
 }
 
-#news p, #news h1, #aboutUs h1, #aboutUs p, #aboutUs img{
+#news p, #news h2, #aboutUs h1, #aboutUs p, #aboutUs img{
     animation: news 0.5s forwards;
     -webkit-animation: news 0.5s forwards;
     -moz-animation: news 0.5s forwards;
@@ -421,23 +424,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     #aboutUs h1 span {
         font-size: 45px;
     }
-
-    #aboutUs p {
-        width: 720px;
-        margin-inline: auto;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    #aboutUs p {
-        width: 940px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #aboutUs p {
-        width: 1140px;
-    }
 }
 
 /* Blog - Lorenzo */
@@ -479,19 +465,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background-color: white;
     z-index: 1;
     position: relative;
-  }
-  #blog::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../images/overlay-pattern.png) #000000;
-    opacity: 0.3;
-  }
+  } 
   .inner-blog-container {
     display: flex;
     flex-direction: column;
@@ -564,37 +538,32 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     .blog-text {
       margin: 0px 32px 80px
     }
-    .left-pointer::before {
+    .left-pointer::before, .right-pointer::before {
       content: '';
       position: absolute;
-      left: 0;
-      top: 86px;
-      right: 0;
       width: 30px;
       height: 30px;
-      margin-top: -15px;
       background: #fff;
       transform: rotate(45deg);
-      margin-left: -15px;
       z-index: 1;
     }
-    .right-pointer::before {
-      content: '';
-      position: absolute;
+    .left-pointer::before  {
+      left: 0;
+      top: 86px;
+      right: 0;      
+      margin-top: -15px;      
+      margin-left: -15px;      
+    }
+    .right-pointer::before {      
       right: -15px;
       top: 90px;
-      width: 30px;
-      height: 30px;
-      margin-top: 0px;
-      background: #fff;
-      transform: rotate(45deg);
-      z-index: 1;
+      margin-top: 0px;      
     }
     .more-info-blog {
         height: 110px;
         justify-content: center;
     }
-    }
+}
   @media screen and (min-width: 992px) {
     #blog .container {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -702,12 +671,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding: 21px 0px;
 }
 
-#menu_plate ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
 #menu_plate h2 {
     margin: 0px;
     font-size: 24px;
@@ -813,15 +776,10 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     100% {opacity: 1; transform: translateY(0);}
 }
 
-
 /* Media queries */
 
 @media screen and (min-width: 768px) {
-    #menu {
-        width: 720px;
-        margin-inline:auto;
-    }
-
+   
     #menu_container {
         padding-inline: 0px;
     }
@@ -856,9 +814,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 
 @media screen and (min-width: 992px) {
-    #menu {
-        width: 940px;
-    }
 
     #menu_text p {
         padding-inline: 130px;
@@ -866,10 +821,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 
 @media screen and (min-width: 1200px){
-    #menu {
-        width: 1140px;
-    }
-
+   
     #menu_text p {
         font-size: 16px;
         color: #9D9D9D;
@@ -885,7 +837,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     background-attachment: fixed;
     background-size: cover;
 }
-#news::before {
+#news::before, #blog::before {
     content: "";
     top: 0;
     bottom: 0;
@@ -904,17 +856,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     padding: 40px 0;
     animation-delay: 0.3s;
 }
-#news h2:before{
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 140px;
-    height: 1px;
-    background: #C8C1B3;
-    margin-left: -70px;
-}
-
 #news p{
     padding: 25px 0;
     color: #fff;
@@ -934,7 +875,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     height: 65px;
     font-size: 15px;
     padding: 6px 12px;
-    line-height: 1.4;
     color: #555;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
     box-sizing: border-box;
@@ -962,7 +902,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 #news form{
     text-align: left;
 }
-.containerNews, #news h1, #news{
+.containerNews, #news h2, #news{
     position: relative;
 }
 @keyframes news{
@@ -1002,16 +942,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     animation-name: news;
     animation-duration: 500ms;
     animation-delay: 300ms;
-}
-#contacts h2 ::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 60px;
-    width: 140px;
-    height: 1px;
-    background: #c8c1b3;
-    margin-left: -70px;
 }
 .footer_h3 {
     color: #2E2E2E;
@@ -1086,8 +1016,6 @@ address a, address p, #footer_blog a, #footer_blog p,  #footer_Content a {
     cursor: pointer;
 }
 address ul, #footer_blog ul, #photo ul, #socialMedia ul {
-    list-style-type: none;
-    padding: 0px;
     margin-left: 15px;
 }
 address .fa {
@@ -1096,10 +1024,8 @@ address .fa {
 }
 #photo ul, #socialMedia ul {
     display: flex;
-    justify-content: space-between;
-    padding: 0;
-    width: 70%;
-    margin-left: 15px;
+    justify-content: space-between;    
+    width: 70%;    
 }
 #socialMedia{
     margin-bottom: 100px;
@@ -1157,10 +1083,9 @@ address .fa {
     }
     address ul li {
         margin-inline: 0;
-        width: 30%;
     }
     
-    #socialMedia ul {
+    #socialMedia ul, address ul li {
         width: 30%;
     }
     #photo ul {
@@ -1173,10 +1098,7 @@ address .fa {
         width: 70%;
         margin-left: 15%;
     }
-    #contacts, #footer_info {
-        width: 720px;
-        margin-inline: auto;
-    }
+   
     #footer_info {
         padding-block: 0;
     }
@@ -1201,67 +1123,53 @@ address .fa {
     }
     #footer_info {
         display: flex;
-        width: 940px;
-        margin: auto;
     }
-    address {
+    address, #footer_info div  {
         width: 100%;
     }
-    address ul {
+    address ul, #footer_info div {
         display: flex;
         flex-direction: column;
-    }
-    address ul li {
-        margin: 0px;
-    }
-    #footer_info div {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    #photo {
-        margin-bottom: 30px;
-    }
-    #photo li {
-        margin: 10px;
-    }
-    #photo h3, #socialMedia h3 {
-        margin-left: 24px;
-    }
-    #socialMedia li {
-        margin: 15px;
-    }
-    .face {
-        margin-left: 3px;
-        width: 20px;
-    }
-    .footer_h3 {
-        margin-bottom: 0px;
-    }
-    #photo h3 {
-        margin-bottom: 20px;
-    }
-    .quartaFoto {
-        margin-top: 100px;
-        margin-left: -255px;
-    }
-    #socialMedia h3 {
-        margin-top: 0px;
-    }
-    #contacts {
-        margin-bottom: 70px;
-    }
-    #contacts, #footer_info {
-        width: 940px;
     }
     address ul li {
         width: auto;
     }
+    #footer_blog h4 {
+        margin-top:20px;
+    }
+    #photo {
+        margin-bottom: 30px;
+    }
+    #photo li, #socialMedia li {
+        margin: 10px;
+    }
+    #photo, #socialMedia {
+        padding-left:25px;
+    }    
+    .face {
+        margin-left: 3px;
+        width: 20px;
+    }
+    #photo h3, #socialMedia h3 {
+        margin-left:10px;
+    }
+    .quartaFoto {
+        margin-top: 90px;
+        margin-left: -255px;
+    }
+    #socialMedia h3 {
+        margin-top: 0px;        
+    }
+    #contacts {
+        margin-bottom: 70px;
+    }  
+    #photo ul {
+        margin-top: 15px;
+    }
 }
 @media screen and (min-width:1200px) {
     .quartaFoto {
-        margin-top: 0px;
-        margin-left: 0px;
+        margin: 0px;
     }
     #footer_info {
         width: 100%;
@@ -1269,23 +1177,36 @@ address .fa {
     address, #footer_blog, #photo {
         font-size: 18px;
     }
-    address h4 {
+    address h4, #footer_blog h4 {
         font-size: 20px;
-        font-weight:lighter;
-    }
+        font-weight:500;
+    }    
     #footer_blog h4 {
-        font-size: 20px;
         font-weight: 600;
-        margin-bottom: 10px;
-    }
-    address li {
-        line-height: 0px;
-    }
+    }    
     #buttonForm {
         width: 45%;
         margin-left: 55%;
+    }    
+}
+@media screen and (min-width:768px) {
+
+    #main_nav, #featured, #aboutUs p, #menu, #contacts, #footer_info {
+        width: 720px;
+        margin-inline: auto;
     }
-    #contacts, #footer_info{
-        width: 1140px;
+}
+
+@media screen and (min-width:992px) {
+
+    #main_nav, #featured, #aboutUs p, #menu, #footer_info, #contacts, #footer_info {
+        width: 940px;       
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    #main_nav, #featured, #aboutUs p, #menu, #contacts, #footer_info  {
+        width: 1140px;      
     }
 }
