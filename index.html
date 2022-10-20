@@ -33,12 +33,12 @@
             </div>
             <input type="checkbox" name="menu" id="switch">
             <ul>
-                <li><a href="#top">HOME</a></li>
-                <li><a href="#aboutUs">ABOUT US</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#menu">MENU</a></li>
-                <li><a href="#news">NEWS</a></li>
-                <li><a href="#contacts">CONTACTS</a></li>
+                <li class="tabs"><a href="#top">HOME</a></li>
+                <li class="tabs"><a href="#aboutUs">ABOUT US</a></li>
+                <li class="tabs"><a href="#blog">BLOG</a></li>
+                <li class="tabs"><a href="#menu">MENU</a></li>
+                <li class="tabs"><a href="#news">NEWS</a></li>
+                <li class="tabs"><a href="#contacts">CONTACTS</a></li>
             </ul>
         </nav>
     </section>
@@ -81,24 +81,24 @@
             </div>
             
             <ul>
-                <label for="nav1" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav2" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav3" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav4" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav5" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav6" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav7" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav8" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav9" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav10" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav11" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav12" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav13" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav14" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav15" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav16" name="scroller"><li>&nbsp;</li></label>  
-                <label for="nav17" name="scroller"><li>&nbsp;</li></label>
-                <label for="nav18" name="scroller"><li>&nbsp;</li></label>              
+                <label for="nav1" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav2" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav3" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav4" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav5" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav6" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav7" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav8" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav9" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav10" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav11" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav12" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav13" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav14" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav15" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav16" name="mouseoverer"><li>&nbsp;</li></label>  
+                <label for="nav17" name="mouseoverer"><li>&nbsp;</li></label>
+                <label for="nav18" name="mouseoverer"><li>&nbsp;</li></label>              
             </ul>
             
             </div>
@@ -106,7 +106,7 @@
 
     <!-- About Us - Gennaro -->
 
-    <section id="aboutUs">
+    <section id="aboutUs" onmouseover="highlight(1)" onmouseleave="leave(1)">
 
         <img src="assets/images/cooker-img.png" alt="chef">
         <h1>Your 
@@ -129,104 +129,74 @@
     <!-- Blog - Lorenzo -->
 
 
-    <section id="blog">
+    <section id="blog" onmouseover="highlight(2)" onmouseleave="leave(2)">
         <h1 class="blog-heading">
-          Latest <span>From</span> the <span>Blog</span>
+            Latest <span>From</span> the <span>Blog</span>
         </h1>
         <div class="container">
-          <div class="inner-blog-container">
-            <img src="./assets/images/blog/blog-img-1.jpg" alt="soup" />
-          </div>
-          <div
-            class="inner-blog-container description-blog-container left-pointer"
-          >
-            <div class="blog-text">
-              <h3>Homestyle Chicken Pot Pie</h3>
-              <p>
-                Prepared in New England fash&#45;ion. Tender all&#45;white meat
-                chicke simmered...
-              </p>
+            <div class="inner-blog-container">
+                <img src="./assets/images/blog/blog-img-1.jpg" alt="soup" />
             </div>
-          </div>
-          <div class="inner-blog-container">
-            <img src="./assets/images/blog/blog-img-2.jpg" alt="waffle" />
-          </div>
-          <div
-            class="inner-blog-container description-blog-container left-pointer"
-          >
-            <div class="blog-text">
-              <h3>Homestyle Chicken Pot Pie</h3>
-              <p>
-                Prepared in New England fash&#45;ion. Tender all&#45;white meat
-                chicke simmered...
-              </p>
+            <div class="inner-blog-container description-blog-container left-pointer">
+                <div class="blog-text">
+                    <h3>Homestyle Chicken Pot Pie</h3>
+                    <p>Prepared in New England fash&#45;ion. Tender all&#45;white meat chicke simmered...</p>
+                </div>
             </div>
-          </div>
-          <div
-            class="inner-blog-container description-blog-container right-pointer"
-          >
-            <div class="blog-text">
-              <h3>Homestyle Chicken Pot Pie</h3>
-              <p>
-                Prepared in New England fash&#45;ion. Tender all&#45;white meat
-                chicke simmered...
-              </p>
+            <div class="inner-blog-container">
+                <img src="./assets/images/blog/blog-img-2.jpg" alt="waffle" />
             </div>
-          </div>
-          <div class="inner-blog-container">
-            <img src="./assets/images/blog/blog-img-3.jpg" alt="steak" />
-          </div>
-          <div
-            class="inner-blog-container description-blog-container right-pointer"
-          >
-            <div class="blog-text">
-              <h3>Homestyle Chicken Pot Pie</h3>
-              <p>
-                Prepared in New England fash&#45;ion. Tender all&#45;white meat
-                chicke simmered...
-              </p>
+            <div class="inner-blog-container description-blog-container left-pointer">
+                <div class="blog-text">
+                    <h3>Homestyle Chicken Pot Pie</h3>
+                    <p>Prepared in New England fash&#45;ion. Tender all&#45;white meat chicke simmered...</p>
+                </div>
             </div>
-          </div>
-          <div class="inner-blog-container">
-            <img src="./assets/images/blog/blog-img-4.jpg" alt="sausages" />
-          </div>
-          <div class="inner-blog-container">
-            <img src="./assets/images/blog/blog-img-5.jpg" alt="pancake" />
-          </div>
-          <div
-            class="inner-blog-container description-blog-container left-pointer"
-          >
-            <div class="blog-text">
-              <h3>Homestyle Chicken Pot Pie</h3>
-              <p>
-                Prepared in New England fash&#45;ion. Tender all&#45;white meat
-                chicke simmered...
-              </p>
+            <div class="inner-blog-container description-blog-container right-pointer">
+                <div class="blog-text">
+                    <h3>Homestyle Chicken Pot Pie</h3>
+                    <p>Prepared in New England fash&#45;ion. Tender all&#45;white meat chicke simmered...</p>
+                </div>
             </div>
-          </div>
-          <div class="inner-blog-container">
-            <img src="./assets/images/blog/blog-img-6.jpg" alt="salad" />
-          </div>
-          <div
-            class="inner-blog-container description-blog-container left-pointer"
-          >
-            <div class="blog-text">
-              <h3>Homestyle Chicken Pot Pie</h3>
-              <p>
-                Prepared in New England fash&#45;ion. Tender all&#45;white meat
-                chicke simmered...
-              </p>
+            <div class="inner-blog-container">
+                <img src="./assets/images/blog/blog-img-3.jpg" alt="steak" />
             </div>
-          </div>
-          
+            <div class="inner-blog-container description-blog-container right-pointer">
+                <div class="blog-text">
+                    <h3>Homestyle Chicken Pot Pie</h3>
+                    <p>Prepared in New England fash&#45;ion. Tender all&#45;white meat chicke simmered...</p>
+                </div>
+            </div>
+            <div class="inner-blog-container">
+                <img src="./assets/images/blog/blog-img-4.jpg" alt="sausages" />
+            </div>
+            <div class="inner-blog-container">
+                <img src="./assets/images/blog/blog-img-5.jpg" alt="pancake" />
+            </div>
+            <div class="inner-blog-container description-blog-container left-pointer">
+                <div class="blog-text">
+                    <h3>Homestyle Chicken Pot Pie</h3>
+                    <p>Prepared in New England fash&#45;ion. Tender all&#45;white meat chicke simmered...</p>
+                </div>
+            </div>
+            <div class="inner-blog-container">
+                <img src="./assets/images/blog/blog-img-6.jpg" alt="salad" />
+            </div>
+            <div class="inner-blog-container description-blog-container left-pointer">
+                <div class="blog-text">
+                    <h3>Homestyle Chicken Pot Pie</h3>
+                    <p>Prepared in New England fash&#45;ion. Tender all&#45;white meat chicke simmered...</p>
+                </div>
+            </div>
+    
         </div>
         <div class="more-info-blog">
-          <a href="#top" alt="">MORE INFO</a>
+            <a href="#top" alt="">MORE INFO</a>
         </div>
-      </section>
-
+    </section>
+    
     <!-- Menu - David -->
-    <section id="menu">
+    <section id="menu" onmouseover="highlight(3)" onmouseleave="leave(3)">
         <div id="menu_container">
             <div id="menu_title">
                 <h1>our <span class="menu_orange">menu</span> the <span class="menu_orange">price</span></h1>
@@ -248,10 +218,10 @@
                                 <div class="menu_line_bottom"></div>
                                 <span class="menu_price">&#36 25.00</span>
                             </div>
-                                <div class="menu_description">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <div class="menu_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-                                </div>
+                            </div>
                         </div>
                     </li>
                     <li>
@@ -268,26 +238,26 @@
                         </div>
                     </li>
                     <li id="cereal">
-                            <div class="plate_top">
-                                <h2>Cereal, Panecillos y Frutas</h2>
-                                <div class="menu_line_bottom"></div>
-                                <span class="menu_price">&#36 5.00</span>
-                            </div>
-                            <div class="menu_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-                            </div>
+                        <div class="plate_top">
+                            <h2>Cereal, Panecillos y Frutas</h2>
+                            <div class="menu_line_bottom"></div>
+                            <span class="menu_price">&#36 5.00</span>
+                        </div>
+                        <div class="menu_description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                        </div>
                     </li>
                     <li id="meat">
                         <div class="plate_top">
                             <h2>Meat of Skewers</h2>
                             <div class="menu_line_bottom"></div>
                             <span class="menu_price">&#36 15.00</span>
-                        </div>    
-                            <div class="menu_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-                            </div>
+                        </div>
+                        <div class="menu_description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                        </div>
                     </li>
                     <li id="steak">
                         <div class="plate_top">
@@ -295,58 +265,55 @@
                             <div class="menu_line_bottom"></div>
                             <span class="menu_price">&#36 75.00</span>
                         </div>
-                            <div class="menu_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-                            </div>
+                        <div class="menu_description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                        </div>
                     </li>
                     <li id="cesar">
                         <div class="plate_top">
                             <h2>Cesar Salad</h2>
                             <div class="menu_line_bottom"> </div>
                             <span class="menu_price">&#36 7.00</span>
-                        </div>    
-                            <div class="menu_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-                            </div>
+                        </div>
+                        <div class="menu_description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                        </div>
                     </li>
                 </ul>
                 <a id="menu_button" href="#top">MORE INFO</a>
             </div>
         </div>
     </section>
-
-
+    
+    
     <!-- News - Alex -->
-
-    <section id="news">
+    
+    <section id="news" onmouseover="highlight(4)" onmouseleave="leave(4)">
         <div class="containerNews">
-          <div>
-            <h1>SUBSCRIBE <span>to our</span> NEWSLETTER</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-        </div>
-          <form action="#">
             <div>
-              <input
-                type="text"
-                placeholder="Enter your email to subscribe..."
-                id="inputNews"/>
+                <h1>SUBSCRIBE <span>to our</span> NEWSLETTER</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
+                </p>
             </div>
-            <div>
-                  <button type="submit" class="btnNews">
-                      SUBSCRIBE
-                  </button>
-            </div>
-          </form>
+            <form action="#">
+                <div>
+                    <input type="text" placeholder="Enter your email to subscribe..." id="inputNews" />
+                </div>
+                <div>
+                    <button type="submit" class="btnNews">
+                        SUBSCRIBE
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
-
-        <!-- Contacts - Paolo -->
-    <section id="contacts">
+    
+    <!-- Contacts - Paolo -->
+    <section id="contacts" onmouseover="highlight(5)" onmouseleave="leave(5)">
         <div>
             <h1 class="footer_h1">our <span class="orangeText">CONTACT US</span></h1>
         </div>
@@ -364,7 +331,7 @@
             </form>
         </div>
     </section>
-    <section id="footer_Info">
+    <section id="footer_Info" onmouseover="highlight(5)" onmouseleave="leave(5)">
         <div id="address">
             <h3 class="footer_h3">CONTACT <span class="orangeText">INFO</span></h3>
             <ul>
@@ -437,6 +404,6 @@
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
-</body>
-
-</html>
+    </body>
+    
+    </html>

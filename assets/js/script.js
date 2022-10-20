@@ -41,3 +41,13 @@ function next() {
     }
     document.getElementById("nav" + slides[next]).checked = true; 
 }
+
+function highlight(index) {
+    let tab = document.getElementsByClassName("tabs");
+    tab[index].style.borderBottom = "2px solid #ff5333";
+}
+
+function leave(index) {
+    let tab = document.getElementsByClassName("tabs");
+    tab[index].style.borderBottom = "transparent";
+}
