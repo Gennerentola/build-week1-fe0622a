@@ -530,9 +530,14 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin-left: -70px;
   }
   .more-info-blog {
-    position: absolute;
-    bottom: 9em;
-    left: 16px;
+    display: flex;
+    z-index: 1;
+    margin-inline: 15px;
+    justify-content: left;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    align-items: flex-end;
   }
   .more-info-blog a {
     text-decoration: none;
@@ -589,9 +594,8 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
       z-index: 1;
     }
     .more-info-blog {
-      position: relative;
-      bottom: -70px;
-      left: -2px;
+        height: 110px;
+        justify-content: center;
     }
     }
   @media screen and (min-width: 992px) {
@@ -614,8 +618,9 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
       padding-inline: 12px;
     }
     .more-info-blog {
-      bottom: -32px;
-      left: 337px;
+        justify-content: right;  
+        width: 940px; 
+        height: 81px;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -634,8 +639,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     .inner-blog-container img {
       width: 285px;
     }
+    .more-info-blog a {
+        padding-inline: 104px;
+    }
     .more-info-blog {
-      left: 437px;
+        width: 1140px;    
     }
   }
 
@@ -1002,7 +1010,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin-bottom: 50px;
     text-align: center;
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: 500;
     animation-name: news;
     animation-duration: 500ms;
     animation-delay: 300ms;
@@ -1029,10 +1037,17 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 }
 .footer_h1 span {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 600;
 }
 .orangeText {
     color: #ff530a;
+}
+address {
+    font-style: normal;
+    
+}
+address .orangeText, #footer_blog .orangeText {
+    font-size: 20px;
 }
 #form2 input, #form2 textarea {
     display: block;
@@ -1052,22 +1067,22 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     flex-direction: column;
     align-items: left;
 }
-#address, #footer_Blog, #photo, #socialMedia {
+address, #footer_blog, #photo, #socialMedia {
     animation: last 1.5s forwards;
     -webkit-animation: last 1.5s forwards;
     -moz-animation: last 1.5s forwards;
     opacity: 0;
 }
-#address {
+address {
     animation-delay: 0.2s;
 }
-#footer_Blog {
+#footer_blog {
     animation-delay: 0.7s;
 }
 #photo, #socialMedia {
     animation-delay: 1.5s;
 }
-#address a, #address p, #footer_Blog a, #footer_Blog p,  #footer_Content a {
+address a, address p, #footer_blog a, #footer_blog p,  #footer_Content a {
     text-decoration: none;
     color: #474747;
 }
@@ -1086,13 +1101,14 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     color: white;
     cursor: pointer;
 }
-#address ul, #footer_Blog ul, #photo ul, #socialMedia ul {
+address ul, #footer_blog ul, #photo ul, #socialMedia ul {
     list-style-type: none;
     padding: 0px;
     margin-left: 15px;
 }
-#address .fa {
+address .fa {
     padding-right: 25px;
+    font-size: 20px;
 }
 #photo ul, #socialMedia ul {
     display: flex;
@@ -1109,7 +1125,7 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     font-size: larger;
 }
 #socialMedia ul li{
-    background-color: gray;
+    background-color: #949494;
     padding: 10px;
     width: 16px;
     height: 16px;
@@ -1150,12 +1166,12 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
 
 /*MEDIA QUERIES*/
 @media screen and (min-width:768px) {
-    #address ul {
+    address ul {
         display: flex;
         justify-content: space-between;
         margin-inline: 0;
     }
-    #address ul li {
+    address ul li {
         margin-inline: 0;
         width: 30%;
     }
@@ -1173,17 +1189,17 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         width: 70%;
         margin-left: 15%;
     }
-    #contacts, #footer_Info {
+    #contacts, #footer_info {
         width: 720px;
         margin-inline: auto;
     }
-    #footer_Info {
+    #footer_info {
         padding-block: 0;
     }
     .footer_h3 {
         margin-left: 0;
     }
-    #footer_Info ul {
+    #footer_info ul {
         margin-inline: 0;
     }
     #footer_Form {
@@ -1202,19 +1218,22 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     .footer_h1 span {
         font-size: 45px;
     }
-    #footer_Info {
+    #footer_info {
         display: flex;
         width: 940px;
         margin: auto;
     }
-    #address ul {
+    address {
+        width: 100%;
+    }
+    address ul {
         display: flex;
         flex-direction: column;
     }
-    #address ul li {
+    address ul li {
         margin: 0px;
     }
-    #footer_Info div {
+    #footer_info div {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1251,10 +1270,10 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     #contacts {
         margin-bottom: 70px;
     }
-    #contacts, #footer_Info {
+    #contacts, #footer_info {
         width: 940px;
     }
-    #address ul li {
+    address ul li {
         width: auto;
     }
 }
@@ -1263,29 +1282,29 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
         margin-top: 0px;
         margin-left: 0px;
     }
-    #footer_Info {
+    #footer_info {
         width: 100%;
     }
-    #address, #footer_Blog, #photo {
+    address, #footer_blog, #photo {
         font-size: 18px;
     }
-    #address h4 {
+    address h4 {
         font-size: 20px;
         font-weight:lighter;
     }
-    #footer_Blog h4 {
+    #footer_blog h4 {
         font-size: 20px;
-        font-weight: bolder;
+        font-weight: 600;
         margin-bottom: 10px;
     }
-    #address li {
+    address li {
         line-height: 0px;
     }
     #buttonForm {
         width: 45%;
         margin-left: 55%;
     }
-    #contacts, #footer_Info{
+    #contacts, #footer_info{
         width: 1140px;
     }
 }

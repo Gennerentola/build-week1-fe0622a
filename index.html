@@ -28,7 +28,7 @@
     <section id="main_nav">
         <nav>
             <div>
-                <img src="assets/images/logo.png" alt="Restaurant&apos;s">
+                <a href="#"><img src="assets/images/logo.png" alt="Restaurant&apos;s"></a>
                 <label for="switch" id="bars"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></label>
             </div>
             <input type="checkbox" name="menu" id="switch">
@@ -292,23 +292,26 @@
     
     <section id="news" onmouseover="highlight(4)" onmouseleave="leave(4)">
         <div class="containerNews">
+          <div>
+            <h1>SUBSCRIBE <span>to our</span> NEWSLETTER</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </p>
+        </div>
+          <form action="#">
             <div>
-                <h1>SUBSCRIBE <span>to our</span> NEWSLETTER</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod
-                </p>
+              <input
+                type="email"
+                placeholder="Enter your email to subscribe..."
+                id="inputNews"/>
             </div>
-            <form action="#">
-                <div>
-                    <input type="text" placeholder="Enter your email to subscribe..." id="inputNews" />
-                </div>
-                <div>
-                    <button type="submit" class="btnNews">
-                        SUBSCRIBE
-                    </button>
-                </div>
-            </form>
+            <div>
+                  <button type="submit" class="btnNews">
+                      SUBSCRIBE
+                  </button>
+            </div>
+          </form>
         </div>
     </section>
     
@@ -331,8 +334,8 @@
             </form>
         </div>
     </section>
-    <section id="footer_Info" onmouseover="highlight(5)" onmouseleave="leave(5)">
-        <div id="address">
+    <section id="footer_info">
+        <address>
             <h3 class="footer_h3">CONTACT <span class="orangeText">INFO</span></h3>
             <ul>
                 <li>
@@ -350,8 +353,8 @@
                     </p>
                 </li>
             </ul>
-        </div>
-        <div id="footer_Blog">
+        </address>
+        <div id="footer_blog">
             <h3 class="footer_h3">LATEST <span class="orangeText">BLOG POSTS</span></h3>
             <div>
                 <ul>
@@ -399,7 +402,7 @@
         <div>
             <div id="footer_Content">
                 <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By <a
-                        href="http://www.themefisher.com"><span class="orangeText">Themefisher</span></a></p>
+                        href="http://www.themefisher.com" target="_blank"><span class="orangeText">Themefisher</span></a></p>
             </div>
         </div>
     </footer>
