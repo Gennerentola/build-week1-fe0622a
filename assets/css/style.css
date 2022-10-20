@@ -739,10 +739,6 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin: 0;
 }
 
-#menu_button, #menu_text, #menu_line, #menu_title {
-    visibility: visible;
-}
-
 #menu_button {
     float: right;
     border: 1px solid #FF4F02;
