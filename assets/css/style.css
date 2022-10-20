@@ -530,9 +530,14 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     margin-left: -70px;
   }
   .more-info-blog {
-    position: absolute;
-    bottom: 9em;
-    left: 16px;
+    display: flex;
+    z-index: 1;
+    margin-inline: 15px;
+    justify-content: left;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    align-items: flex-end;
   }
   .more-info-blog a {
     text-decoration: none;
@@ -589,9 +594,8 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
       z-index: 1;
     }
     .more-info-blog {
-      position: relative;
-      bottom: -70px;
-      left: -2px;
+        height: 110px;
+        justify-content: center;
     }
     }
   @media screen and (min-width: 992px) {
@@ -614,8 +618,9 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
       padding-inline: 12px;
     }
     .more-info-blog {
-      bottom: -32px;
-      left: 337px;
+        justify-content: right;  
+        width: 940px; 
+        height: 81px;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -634,8 +639,11 @@ label[for=nav2], label[for=nav3], label[for=nav4], label[for=nav5], label[for=na
     .inner-blog-container img {
       width: 285px;
     }
+    .more-info-blog a {
+        padding-inline: 104px;
+    }
     .more-info-blog {
-      left: 437px;
+        width: 1140px;    
     }
   }
 
